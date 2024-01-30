@@ -16,7 +16,7 @@ class CustomListtile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: EdgeInsets.all(10),
+        padding: EdgeInsets.only(top: 10),
         child: Row(
           children: [
             Expanded(
@@ -31,6 +31,9 @@ class CustomListtile extends StatelessWidget {
               ),
               trailing: Text("$date"),
             )),
+            Container(
+              child: Icon(Icons.arrow_right),
+            )
           ],
         ));
   }

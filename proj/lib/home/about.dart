@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:proj/Home.dart';
+import 'package:proj/home/Home.dart';
 
 class about extends StatefulWidget {
   final data;
