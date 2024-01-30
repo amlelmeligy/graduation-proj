@@ -30,7 +30,7 @@ class CustomListtile extends StatelessWidget {
                 style: TextStyle(fontSize: 12),
               ),
               trailing: Text("$date"),
-            ))
+            )),
           ],
         ));
   }

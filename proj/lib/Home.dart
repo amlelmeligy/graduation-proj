@@ -35,14 +35,18 @@ class _HomeState extends State<Home> {
         home: Scaffold(
             bottomNavigationBar: BottomNavigationBar(
                 iconSize: 35,
-                selectedItemColor: Colors.orange,
+                selectedItemColor: Colors.blue[900],
                 items: [
                   BottomNavigationBarItem(
-                      icon: Icon(Icons.home_outlined), label: ""),
+                      icon: Icon(Icons.home_outlined), label: "Home"),
                   BottomNavigationBarItem(
-                      icon: Icon(Icons.shopping_bag_outlined), label: ""),
+                      icon: Icon(
+                        Icons.cast_for_education_rounded,
+                      ),
+                      label: "Education"),
                   BottomNavigationBarItem(
-                      icon: Icon(Icons.person_2_outlined), label: "")
+                      icon: Icon(Icons.control_point_duplicate_sharp),
+                      label: "Create Task")
                 ]),
             // appBar: AppBar(
             //     backgroundColor: Color.fromARGB(255, 92, 103, 165),
@@ -85,13 +89,11 @@ class _HomeState extends State<Home> {
                 ),
                 ///////////////////////////////////////////////////////////////////
                 Container(
-                  height: 20,
+                  height: 15,
                 ),
 /////////////////////////////////////////////////////////////////////////////
                 Container(
-                  padding: EdgeInsets.all(5),
-                  decoration:
-                      BoxDecoration(borderRadius: BorderRadius.circular(500)),
+                  // padding: EdgeInsets.all(5),
                   child: GridView.builder(
                     physics: NeverScrollableScrollPhysics(),
                     shrinkWrap: true,
@@ -100,34 +102,42 @@ class _HomeState extends State<Home> {
                     itemCount: item.length,
                     itemBuilder: (context, i) {
                       return InkWell(
-                        onTap: () {
-                          Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => about(data: item[i])));
-                        },
-                        child: Card(
-                          child: Column(
-                            children: [
-                              Container(
-                                height: 40,
-                              ),
-                              Container(
-                                padding: EdgeInsets.only(top: 5),
-                                child: Text(
-                                  item[i]["name"],
-                                  style: TextStyle(fontWeight: FontWeight.bold),
+                        onTap: () {},
+                        child: Container(
+                          padding: EdgeInsets.all(4),
+                          child: Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    width: 2.0,
+                                    color: Color.fromARGB(255, 139, 165, 186),
+                                    style: BorderStyle.solid),
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: Column(
+                              children: [
+                                Container(
+                                  height: 30,
                                 ),
-                              ),
-                              Container(
-                                height: 5,
-                              ),
-                              Container(
-                                padding: EdgeInsets.only(top: 5),
-                                child: Icon(
-                                  item[i]["iconname"],
-                                  size: 40,
+                                Container(
+                                  padding: EdgeInsets.only(top: 5),
+                                  child: Text(
+                                    item[i]["name"],
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),
+                                  ),
                                 ),
-                              ),
-                            ],
+                                Container(
+                                  height: 5,
+                                ),
+                                Container(
+                                  padding: EdgeInsets.only(top: 5),
+                                  child: Icon(
+                                    item[i]["iconname"],
+                                    size: 40,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       );
