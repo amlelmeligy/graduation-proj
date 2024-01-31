@@ -50,7 +50,7 @@ class _HomeState extends State<Home> {
     return MaterialApp(
         home: Scaffold(
             bottomNavigationBar: BottomNavigationBar(
-              iconSize: 28,
+              iconSize: 30,
               items: const [
                 BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
                 BottomNavigationBarItem(
