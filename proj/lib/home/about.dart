@@ -32,10 +32,6 @@ class _aboutState extends State<about> {
           iconTheme: IconThemeData(color: Colors.grey[700]),
           backgroundColor: Colors.grey[300],
           elevation: 0.0,
-          // centerTitle: true,
-          ////////////////////////////////////////////////////////////////
-
-          ///////////////////////////////////////////////////////////////////////
         ),
         body: ListView(
           children: [
