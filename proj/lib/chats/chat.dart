@@ -6,49 +6,30 @@ import 'package:proj/home/Home.dart';
 
 class chat extends StatelessWidget {
   int index = 0;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-          bottomNavigationBar: NavigationBar(
-            selectedIndex: index,
-            // onDestinationSelected: (index) =>
-            //     setState(() => this.index = index),
-            height: 65,
-
-            destinations: [
-              NavigationDestination(
-                icon: Icon(
-                  Icons.home,
-                  color: Colors.grey[800],
-                ),
-                label: "Home",
-              ),
-              NavigationDestination(
-                  icon: Icon(
-                    Icons.cast_for_education,
-                    color: Colors.grey[800],
-                  ),
-                  label: "Education"),
-              NavigationDestination(
-                  icon: Icon(
-                    Icons.control_point_duplicate_sharp,
-                    color: Colors.grey[800],
-                  ),
-                  label: "Create Task"),
-              NavigationDestination(
-                  icon: Icon(
-                    Icons.stacked_bar_chart_rounded,
-                    color: Colors.grey[800],
-                  ),
-                  label: "Chat bot"),
-              NavigationDestination(
-                  icon: Icon(
-                    Icons.person,
-                    color: Colors.grey[800],
-                  ),
-                  label: "Profile")
+          bottomNavigationBar: BottomNavigationBar(
+            iconSize: 30,
+            items: const [
+              BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.cast_for_education), label: 'Education'),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.control_point_duplicate_sharp),
+                  label: 'Create Task'),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.stacked_bar_chart_rounded),
+                  label: 'Chat bot'),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.person), label: 'Profile'),
             ],
+            currentIndex: index,
+            selectedItemColor: Color.fromARGB(255, 49, 121, 176),
+            unselectedItemColor: Colors.grey[800],
+            onTap: _changeItem,
           ),
           body: Container(
             color: Color.fromARGB(255, 238, 243, 246),
@@ -137,4 +118,6 @@ class chat extends StatelessWidget {
           )),
     );
   }
+
+  void _changeItem(int value) {}
 }
