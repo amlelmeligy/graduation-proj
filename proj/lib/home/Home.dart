@@ -160,50 +160,105 @@ class _HomeState extends State<Home> {
             ),
           ),
 
-          CustomListtile(
-            name: "Going to school",
-            sub: "From 7 AM to 2 PM",
-            date: "08:39 AM",
+          Container(
+            child: InkWell(
+              onTap: () {},
+              child: CustomListtile(
+                name: "Going to school",
+                sub: "From 7 AM to 2 PM",
+                date: "08:39 AM",
+              ),
+            ),
           ),
-          CustomListtile(
-            name: "Doing English homework",
-            sub: "From 7 AM to 2 PM",
-            date: "07:30 AM",
+          Container(
+            child: InkWell(
+              onTap: () {},
+              child: CustomListtile(
+                name: "Doing English homework",
+                sub: "From 7 AM to 2 PM",
+                date: "08:39 AM",
+              ),
+            ),
           ),
-          CustomListtile(
-            name: "Going to school",
-            sub: "From 7 AM to 2 PM",
-            date: "07:00 AM",
+          Container(
+            child: InkWell(
+              onTap: () {},
+              child: CustomListtile(
+                name: "Going to school",
+                sub: "From 7 AM to 2 PM",
+                date: "08:39 AM",
+              ),
+            ),
           ),
-          CustomListtile(
-            name: "Doing English homework",
-            sub: "From 7 AM to 2 PM",
-            date: "06:30 AM",
+          Container(
+            child: InkWell(
+              onTap: () {},
+              child: CustomListtile(
+                name: "Doing English homework",
+                sub: "From 7 AM to 2 PM",
+                date: "08:39 AM",
+              ),
+            ),
           ),
-          CustomListtile(
-            name: "Going to school",
-            sub: "From 7 AM to 2 PM",
-            date: "06:01 AM",
+          Container(
+            child: InkWell(
+              onTap: () {},
+              child: CustomListtile(
+                name: "Going to school",
+                sub: "From 7 AM to 2 PM",
+                date: "08:39 AM",
+              ),
+            ),
           ),
-          CustomListtile(
-            name: "Doing English homework",
-            sub: "From 7 AM to 2 PM",
-            date: "05:30 AM",
+          Container(
+            child: InkWell(
+              onTap: () {},
+              child: CustomListtile(
+                name: "Doing English homework",
+                sub: "From 7 AM to 2 PM",
+                date: "08:39 AM",
+              ),
+            ),
           ),
-          CustomListtile(
-            name: "Going to school",
-            sub: "From 7 AM to 2 PM",
-            date: "05:00 AM",
+          Container(
+            child: InkWell(
+              onTap: () {},
+              child: CustomListtile(
+                name: "Going to school",
+                sub: "From 7 AM to 2 PM",
+                date: "08:39 AM",
+              ),
+            ),
           ),
-          CustomListtile(
-            name: "Doing English homework",
-            sub: "From 7 AM to 2 PM",
-            date: "05:00 AM",
+          Container(
+            child: InkWell(
+              onTap: () {},
+              child: CustomListtile(
+                name: "Doing English homework",
+                sub: "From 7 AM to 2 PM",
+                date: "08:39 AM",
+              ),
+            ),
           ),
-          CustomListtile(
-            name: "Going to school",
-            sub: "From 7 AM to 2 PM",
-            date: "05:00 AM",
+          Container(
+            child: InkWell(
+              onTap: () {},
+              child: CustomListtile(
+                name: "Going to school",
+                sub: "From 7 AM to 2 PM",
+                date: "08:39 AM",
+              ),
+            ),
+          ),
+          Container(
+            child: InkWell(
+              onTap: () {},
+              child: CustomListtile(
+                name: "Doing English homework",
+                sub: "From 7 AM to 2 PM",
+                date: "08:39 AM",
+              ),
+            ),
           ),
         ]),
       ),
@@ -217,3 +272,6 @@ class _HomeState extends State<Home> {
     });
   }
 }
+/////////////////////////////////////////////////
+///          
+      
