@@ -38,7 +38,10 @@ class chatListtile extends StatelessWidget {
               ),
               subtitle: Text("$email"),
               trailing: Text("$date"),
-            ))
+            )),
+            Container(
+              child: Icon(Icons.task_alt_rounded),
+            )
           ],
         ));
   }
