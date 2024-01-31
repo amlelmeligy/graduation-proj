@@ -40,7 +40,7 @@ class chatListtile extends StatelessWidget {
               trailing: Text("$date"),
             )),
             Container(
-              child: Icon(Icons.task_alt_rounded),
+              child: Icon(Icons.task_alt_rounded, color: Colors.green),
             )
           ],
         ));
