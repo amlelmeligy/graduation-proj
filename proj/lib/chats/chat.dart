@@ -15,6 +15,7 @@ class chat extends StatelessWidget {
             // onDestinationSelected: (index) =>
             //     setState(() => this.index = index),
             height: 65,
+
             destinations: [
               NavigationDestination(
                 icon: Icon(
