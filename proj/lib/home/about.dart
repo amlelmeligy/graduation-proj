@@ -9,24 +9,26 @@ class about extends StatefulWidget {
 }
 
 class _aboutState extends State<about> {
+  int index = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        bottomNavigationBar: BottomNavigationBar(
-            iconSize: 35,
-            selectedItemColor: Colors.blue[900],
-            items: [
-              BottomNavigationBarItem(
-                  icon: Icon(Icons.home_outlined), label: "Home"),
-              BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.cast_for_education_rounded,
-                  ),
-                  label: "Education"),
-              BottomNavigationBarItem(
-                  icon: Icon(Icons.control_point_duplicate_sharp),
-                  label: "Create Task")
-            ]),
+        bottomNavigationBar: NavigationBar(
+          selectedIndex: index,
+          onDestinationSelected: (index) => setState(() => this.index = index),
+          height: 65,
+          destinations: [
+            NavigationDestination(icon: Icon(Icons.home), label: "Home"),
+            NavigationDestination(
+                icon: Icon(Icons.cast_for_education), label: "Education"),
+            NavigationDestination(
+                icon: Icon(Icons.control_point_duplicate_sharp),
+                label: "Create Task"),
+            NavigationDestination(
+                icon: Icon(Icons.stacked_bar_chart_rounded), label: "Chat bot"),
+            NavigationDestination(icon: Icon(Icons.person), label: "Profile")
+          ],
+        ),
         endDrawer: Drawer(),
         appBar: AppBar(
           iconTheme: IconThemeData(color: Colors.grey[700]),
