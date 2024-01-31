@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:proj/chats/chat.dart';
+import 'package:proj/chats/aboutus.dart';
 import 'package:proj/home/about.dart';
 import 'package:proj/home/custom.dart';
 
@@ -77,11 +79,15 @@ class _HomeState extends State<Home> {
                             ),
                             iconColor: Colors.black),
                       )),
-                      Padding(
+                      Container(
                         padding: const EdgeInsets.only(left: 10),
-                        child: Icon(
-                          Icons.message,
-                          size: 30,
+                        child: IconButton(
+                          onPressed: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(builder: (context) => chat()),
+                            );
+                          },
+                          icon: Icon(Icons.message),
                         ),
                       )
                     ],
@@ -102,7 +108,11 @@ class _HomeState extends State<Home> {
                     itemCount: item.length,
                     itemBuilder: (context, i) {
                       return InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(builder: (context) => about()),
+                          );
+                        },
                         child: Container(
                           padding: EdgeInsets.all(4),
                           child: Container(

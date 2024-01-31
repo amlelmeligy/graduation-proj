@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:proj/home/Home.dart';
 
 class about extends StatefulWidget {
-  final data;
-  const about({super.key, this.data});
+  const about({super.key});
 
   @override
   State<about> createState() => _aboutState();
@@ -54,83 +53,6 @@ class _aboutState extends State<about> {
         ),
         body: ListView(
           children: [
-            Image.asset(widget.data["image"]),
-            Container(
-                padding: EdgeInsets.only(top: 5),
-                alignment: Alignment.center,
-                child: Text(
-                  widget.data["name"],
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                )),
-            Container(
-                padding: EdgeInsets.only(top: 10),
-                alignment: Alignment.center,
-                child: Text(
-                  widget.data["description"],
-                  style: TextStyle(color: Colors.grey),
-                )),
-            Container(
-                padding: EdgeInsets.only(top: 10, bottom: 25),
-                alignment: Alignment.center,
-                child: Text(
-                  widget.data["price"],
-                  style: TextStyle(
-                      color: Colors.orange,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18),
-                )),
-
-            ///////////////////////////////////////////////////////////////
-            Container(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    "color : ",
-                    style: TextStyle(color: Colors.grey, fontSize: 17),
-                  ),
-                  Container(
-                    width: 10,
-                  ),
-                  InkWell(
-                    onTap: () {},
-                    child: Container(
-                      height: 20,
-                      width: 20,
-                      decoration: BoxDecoration(
-                          color: Colors.grey,
-                          borderRadius: BorderRadius.circular(30),
-                          border: Border.all(color: Colors.orange)),
-                    ),
-                  ),
-                  Text("  Grey"),
-                  Container(
-                    width: 10,
-                  ),
-                  InkWell(
-                    onTap: () {},
-                    child: Container(
-                      height: 20,
-                      width: 20,
-                      decoration: BoxDecoration(
-                          color: Colors.black,
-                          borderRadius: BorderRadius.circular(30),
-                          border: Border.all(color: Colors.orange)),
-                    ),
-                  ),
-                  Text("  Black"),
-                ],
-              ),
-            ),
-
-            Container(
-                alignment: Alignment.center,
-                padding: EdgeInsets.only(top: 20),
-                child: Text(
-                  "size :  39   40   41   42   43",
-                  style: TextStyle(fontSize: 18, color: Colors.grey),
-                )),
-
             Container(
               padding: EdgeInsets.only(top: 20),
               margin: const EdgeInsets.symmetric(horizontal: 80),
