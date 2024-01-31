@@ -14,14 +14,18 @@ class _aboutState extends State<about> {
     return Scaffold(
         bottomNavigationBar: BottomNavigationBar(
             iconSize: 35,
-            selectedItemColor: Colors.orange,
+            selectedItemColor: Colors.blue[900],
             items: [
               BottomNavigationBarItem(
-                  icon: Icon(Icons.home_outlined), label: ""),
+                  icon: Icon(Icons.home_outlined), label: "Home"),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.shopping_bag_outlined), label: ""),
+                  icon: Icon(
+                    Icons.cast_for_education_rounded,
+                  ),
+                  label: "Education"),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.person_2_outlined), label: "")
+                  icon: Icon(Icons.control_point_duplicate_sharp),
+                  label: "Create Task")
             ]),
         endDrawer: Drawer(),
         appBar: AppBar(
@@ -30,42 +34,11 @@ class _aboutState extends State<about> {
           elevation: 0.0,
           // centerTitle: true,
           ////////////////////////////////////////////////////////////////
-          title: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(
-                Icons.shop_2_outlined,
-                color: Colors.black,
-              ),
-              Text(
-                " Ecommerce",
-                style:
-                    TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
-              ),
-              Text(
-                " Aml",
-                style: TextStyle(
-                    color: Colors.orange, fontWeight: FontWeight.bold),
-              )
-            ],
-          ),
+
           ///////////////////////////////////////////////////////////////////////
         ),
         body: ListView(
           children: [
-            Container(
-              padding: EdgeInsets.only(top: 20),
-              margin: const EdgeInsets.symmetric(horizontal: 80),
-              child: MaterialButton(
-                height: 44,
-                onPressed: () {},
-                child: Text(
-                  "Add To Cart",
-                  style: TextStyle(color: Colors.white),
-                ),
-                color: Colors.black,
-              ),
-            ),
             Container(
               margin: EdgeInsets.symmetric(horizontal: 10),
               child: MaterialButton(

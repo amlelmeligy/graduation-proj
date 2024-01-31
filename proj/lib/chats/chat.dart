@@ -23,12 +23,6 @@ class chat extends StatelessWidget {
                     icon: Icon(Icons.control_point_duplicate_sharp),
                     label: "Create Task")
               ]),
-          // appBar: AppBar(
-          //     title: const Text("Flutter Home Page ",
-          //         style: TextStyle(
-          //             color: Colors.black,
-          //             fontSize: 40.5,
-          //             fontWeight: FontWeight.bold))),
           body: Container(
             color: Color.fromARGB(255, 238, 243, 246),
             padding: EdgeInsets.all(10),
