@@ -18,15 +18,36 @@ class _aboutState extends State<about> {
           onDestinationSelected: (index) => setState(() => this.index = index),
           height: 65,
           destinations: [
-            NavigationDestination(icon: Icon(Icons.home), label: "Home"),
             NavigationDestination(
-                icon: Icon(Icons.cast_for_education), label: "Education"),
+                icon: Icon(
+                  Icons.home,
+                  color: Colors.grey[800],
+                ),
+                label: "Home"),
             NavigationDestination(
-                icon: Icon(Icons.control_point_duplicate_sharp),
+                icon: Icon(
+                  Icons.cast_for_education,
+                  color: Colors.grey[800],
+                ),
+                label: "Education"),
+            NavigationDestination(
+                icon: Icon(
+                  Icons.control_point_duplicate_sharp,
+                  color: Colors.grey[800],
+                ),
                 label: "Create Task"),
             NavigationDestination(
-                icon: Icon(Icons.stacked_bar_chart_rounded), label: "Chat bot"),
-            NavigationDestination(icon: Icon(Icons.person), label: "Profile")
+                icon: Icon(
+                  Icons.stacked_bar_chart_rounded,
+                  color: Colors.grey[800],
+                ),
+                label: "Chat bot"),
+            NavigationDestination(
+                icon: Icon(
+                  Icons.person,
+                  color: Colors.grey[800],
+                ),
+                label: "Profile")
           ],
         ),
         endDrawer: Drawer(),
