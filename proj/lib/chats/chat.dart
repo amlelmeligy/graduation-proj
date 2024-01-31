@@ -30,7 +30,7 @@ class chat extends StatelessWidget {
           //             fontSize: 40.5,
           //             fontWeight: FontWeight.bold))),
           body: Container(
-            color: Color.fromARGB(255, 223, 232, 239),
+            color: Color.fromARGB(255, 238, 243, 246),
             padding: EdgeInsets.all(10),
             child: ListView(
               children: [
