@@ -89,9 +89,38 @@ class _resourceState extends State<resource> {
                             borderRadius: BorderRadius.circular(5)),
                         child: InkWell(
                             onTap: () {
-                              Navigator.of(context).push(
-                                MaterialPageRoute(
-                                    builder: (context) => title()),
+                              showDialog(
+                                context: context,
+                                builder: (context) {
+                                  return Container(
+                                    margin: EdgeInsets.all(15),
+                                    child: Container(
+                                      child: AlertDialog(
+                                        contentPadding: EdgeInsets.symmetric(
+                                            vertical: 20, horizontal: 40),
+                                        title: Text(
+                                          " Some Information about this Book: ",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 15),
+                                        ),
+                                        content: Text(
+                                            "Abstract :  A lively and informative grade 4 science book that makes learning about the natural world an exciting adventure.Filled with vibrant illustrations, hands-on activities, and real-world examples, this book fosters a deep appreciation for scientific exploration and ignites a passion for learning in young minds.                                                                                                                                                                                                                                                          "
+                                            "You can download this book from that link :                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               "
+                                            "https://www.mlzamty.com/download-science-note-fourth-grade-primary-school-first-term/",
+                                            style: TextStyle(
+                                                fontSize: 12,
+                                                color: Color.fromARGB(
+                                                    255, 0, 0, 0))),
+                                        backgroundColor:
+                                            Color.fromARGB(255, 211, 216, 223),
+                                        shape: RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(15)),
+                                      ),
+                                    ),
+                                  );
+                                },
                               );
                             },
                             child: Column(
@@ -118,6 +147,10 @@ class _resourceState extends State<resource> {
                                       fontWeight: FontWeight.bold,
                                       fontSize: 15),
                                 )),
+
+////////////////////////////////////////////////////////////////
+                                ///
+                                ///
                               ],
                             )),
                       );
