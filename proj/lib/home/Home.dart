@@ -7,6 +7,7 @@ import 'package:proj/pages/bot.dart';
 import 'package:proj/pages/create.dart';
 import 'package:proj/pages/education.dart';
 import 'package:proj/pages/profile.dart';
+import 'package:proj/resources/resource.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -68,7 +69,7 @@ class _HomeState extends State<Home> {
         onTap: _changeItem,
       ),
       body:
-          // WidgetOptions.elementAt(index),
+          // _WidgetOptions.elementAt(index),
           Container(
         padding: EdgeInsets.all(20),
         child: ListView(children: [
@@ -93,7 +94,7 @@ class _HomeState extends State<Home> {
                   child: IconButton(
                     onPressed: () {
                       Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => chat()),
+                        MaterialPageRoute(builder: (context) => resource()),
                       );
                     },
                     icon: Icon(Icons.message),
