@@ -94,7 +94,7 @@ class _HomeState extends State<Home> {
                   child: IconButton(
                     onPressed: () {
                       Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => resource()),
+                        MaterialPageRoute(builder: (context) => chat()),
                       );
                     },
                     icon: Icon(Icons.message),
