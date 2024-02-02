@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:proj/chats/chat.dart';
+import 'package:proj/edit_task/edit_task.dart';
 import 'package:proj/home/about.dart';
 import 'package:proj/home/custom.dart';
 import 'package:proj/tasks/add_task.dart';
@@ -59,6 +60,13 @@ class _HomeState extends State<Home> {
       body:
           // _WidgetOptions.elementAt(index),
           Container(
+        ////////////////////////////////////////////////////////////////////////
+        // width: double.infinity,
+        // height: double.infinity,
+        // decoration: BoxDecoration(
+        //     image: DecorationImage(
+        //         image: AssetImage("image1 (10).jpg"), fit: BoxFit.cover)),
+        ////////////////////////////////////////////////////////////////////////////////////
         padding: EdgeInsets.all(20),
         child: ListView(children: [
           Container(
@@ -82,7 +90,7 @@ class _HomeState extends State<Home> {
                   child: IconButton(
                     onPressed: () {
                       Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => addTask()),
+                        MaterialPageRoute(builder: (context) => editTask()),
                       );
                     },
                     icon: Icon(Icons.message),

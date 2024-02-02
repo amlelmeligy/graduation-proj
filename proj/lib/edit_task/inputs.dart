@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:proj/tasks/add_task.dart';
 
-class input_field extends StatelessWidget {
+class inputs extends StatelessWidget {
   final String title;
   final String hint;
   final TextEditingController? controller;
   // final Widget widget;
 
-  const input_field({
+  const inputs({
     super.key,
     required this.title,
     required this.hint,

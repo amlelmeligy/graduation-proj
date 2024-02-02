@@ -68,12 +68,12 @@ class chat extends StatelessWidget {
                   ),
                 ),
                 chatListtile(
-                    name: "Ahmed",
+                    name: "Sara",
                     email: "What's your opinion?",
                     date: "08:39",
                     imagename: "image1 (1).jpg"),
                 chatListtile(
-                    name: "Sara",
+                    name: "Nada",
                     email: "How are you?",
                     date: "07:30",
                     imagename: "image1 (2).jpg"),
@@ -91,7 +91,7 @@ class chat extends StatelessWidget {
                     name: "Hend",
                     email: "i'm did my math homework",
                     date: "06:01",
-                    imagename: "image1 (5).jpg"),
+                    imagename: "image1 (9).jpg"),
                 chatListtile(
                     name: "Yara",
                     email: "i am ganna have a breake",

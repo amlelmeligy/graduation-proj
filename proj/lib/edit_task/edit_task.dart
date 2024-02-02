@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:proj/edit_task/inputs.dart';
 import 'package:proj/tasks/input_field.dart';
 
-class addTask extends StatefulWidget {
-  const addTask({super.key});
+class editTask extends StatefulWidget {
+  const editTask({super.key});
 
   @override
-  State<addTask> createState() => _addTaskState();
+  State<editTask> createState() => _editTaskState();
 }
 
 int index = 0;
@@ -14,7 +15,7 @@ bool click_1 = true;
 bool click_2 = true;
 bool click_3 = true;
 
-class _addTaskState extends State<addTask> {
+class _editTaskState extends State<editTask> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,13 +46,13 @@ class _addTaskState extends State<addTask> {
               padding: EdgeInsets.only(top: 45),
               child: Center(
                   child: Text(
-                "Create New Task",
+                "Edit Task",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
               )),
             ),
             Container(
               padding: EdgeInsets.only(top: 10),
-              child: input_field(
+              child: inputs(
                 title: " Tittle",
 
                 hint: "Enter the Title",
@@ -66,13 +67,13 @@ class _addTaskState extends State<addTask> {
             Row(
               children: [
                 Expanded(
-                    child: input_field(
+                    child: inputs(
                   title: "Start Time",
                   hint: "Start",
                 )),
                 Container(width: 12),
                 Expanded(
-                    child: input_field(
+                    child: inputs(
                   title: "End Time",
                   hint: "End",
                 )),
@@ -190,7 +191,7 @@ class _addTaskState extends State<addTask> {
             //////////////////////////////////////////////////////////////////
             Container(
               padding: EdgeInsets.only(top: 10),
-              child: input_field(
+              child: inputs(
                 title: " Description",
                 hint: "Enter the Description",
               ),
