@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:proj/home/Home.dart';
+import 'package:proj/navigation_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,17 +20,8 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: Scaffold(
-            // appBar: AppBar(
-            //     backgroundColor: Color.fromARGB(255, 92, 103, 165),
-            //     title: const Text(
-            //       "Sign In Page",
-            //       style: TextStyle(
-            //         color: Color.fromARGB(255, 225, 222, 229),
-            //         //  backgroundColor: Colors.grey
-            //       ),
-            //     )),
-            body: Home()));
+    return MaterialApp(home: Scaffold(body: navigation_bar()));
   }
+
+  navigation_bar() {}
 }
