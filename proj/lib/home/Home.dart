@@ -39,24 +39,24 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-        iconSize: 30,
-        items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.cast_for_education), label: 'Education'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.control_point_duplicate_sharp),
-              label: 'Create Task'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.stacked_bar_chart_rounded), label: 'Chat bot'),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
-        ],
-        currentIndex: index,
-        selectedItemColor: Color.fromARGB(255, 49, 121, 176),
-        unselectedItemColor: Colors.grey[800],
-        onTap: _changeItem,
-      ),
+      // bottomNavigationBar: BottomNavigationBar(
+      //   iconSize: 30,
+      //   items: const [
+      //     BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+      //     BottomNavigationBarItem(
+      //         icon: Icon(Icons.cast_for_education), label: 'Education'),
+      //     BottomNavigationBarItem(
+      //         icon: Icon(Icons.control_point_duplicate_sharp),
+      //         label: 'Create Task'),
+      //     BottomNavigationBarItem(
+      //         icon: Icon(Icons.stacked_bar_chart_rounded), label: 'Chat bot'),
+      //     BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+      //   ],
+      //   currentIndex: index,
+      //   selectedItemColor: Color.fromARGB(255, 49, 121, 176),
+      //   unselectedItemColor: Colors.grey[800],
+      //   onTap: _changeItem,
+      // ),
       body:
           // _WidgetOptions.elementAt(index),
           Container(
