@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:proj/home/Home.dart';
 import 'package:proj/pages.dart/bot.dart';
-import 'package:proj/pages.dart/create.dart';
-import 'package:proj/pages.dart/education.dart';
 import 'package:proj/pages.dart/profile.dart';
+import 'package:proj/resources/resource.dart';
+import 'package:proj/tasks/add_task.dart';
 
 class Navigation extends StatefulWidget {
   const Navigation({super.key});
@@ -16,8 +16,8 @@ class _NavigationState extends State<Navigation> {
   int index = 0;
   final screens = [
     Home(),
-    education(),
-    create(),
+    resource(),
+    addTask(),
     bot(),
     profile(),
   ];
@@ -43,9 +43,8 @@ class _NavigationState extends State<Navigation> {
             label: "Create Task ",
           ),
           NavigationDestination(
-            icon: Image.asset("assets/images/chatVector.png",
-                height: 34, width: 29),
-            label: "ChatBot ",
+            icon: Icon(Icons.stacked_bar_chart_rounded),
+            label: "Chat Bot",
           ),
           NavigationDestination(
             icon: Icon(Icons.account_circle),

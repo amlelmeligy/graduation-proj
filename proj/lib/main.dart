@@ -13,15 +13,11 @@ class MyApp extends StatefulWidget {
   State<MyApp> createState() => _MyAppState();
 }
 
-int selectedindex = 0;
-
 class _MyAppState extends State<MyApp> {
-  get about_us => null;
-
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Scaffold(body: navigation_bar()));
+    return MaterialApp(
+      home: Navigation(),
+    );
   }
-
-  navigation_bar() {}
 }
