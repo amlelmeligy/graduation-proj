@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:proj/chats/chat.dart';
 import 'package:proj/home/about.dart';
 import 'package:proj/home/custom.dart';
+import 'package:proj/tasks/add_task.dart';
+import 'package:proj/tasks/task.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -80,7 +82,7 @@ class _HomeState extends State<Home> {
                   child: IconButton(
                     onPressed: () {
                       Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => chat()),
+                        MaterialPageRoute(builder: (context) => addTask()),
                       );
                     },
                     icon: Icon(Icons.message),
