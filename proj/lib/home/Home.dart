@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:proj/chats/chat.dart';
 import 'package:proj/chats/aboutus.dart';
-import 'package:proj/home/about.dart';
 import 'package:proj/home/custom.dart';
 import 'package:proj/pages.dart/bot.dart';
 import 'package:proj/pages.dart/profile.dart';
 import 'package:proj/resources/resource.dart';
+import 'package:proj/tasks/task.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -61,7 +61,7 @@ class _HomeState extends State<Home> {
                   child: IconButton(
                     onPressed: () {
                       Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => resource()),
+                        MaterialPageRoute(builder: (context) => chat()),
                       );
                     },
                     icon: Icon(Icons.message),
@@ -87,7 +87,7 @@ class _HomeState extends State<Home> {
                 return InkWell(
                   onTap: () {
                     Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => about()),
+                      MaterialPageRoute(builder: (context) => task()),
                     );
                   },
                   child: Container(
@@ -111,9 +111,12 @@ class _HomeState extends State<Home> {
                               style: TextStyle(fontWeight: FontWeight.bold),
                             ),
                           ),
-                          Container(
-                            height: 5,
-                          ),
+                          Divider(
+                              color: Color.fromARGB(255, 139, 165, 186),
+                              thickness: 2),
+                          // Container(
+                          //   height: 5,
+                          // ),
                           Container(
                             padding: EdgeInsets.only(top: 5),
                             child: Icon(

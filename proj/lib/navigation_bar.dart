@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proj/chats/chat.dart';
 import 'package:proj/home/Home.dart';
 import 'package:proj/pages.dart/bot.dart';
 import 'package:proj/pages.dart/profile.dart';
@@ -14,13 +15,7 @@ class Navigation extends StatefulWidget {
 
 class _NavigationState extends State<Navigation> {
   int index = 0;
-  final screens = [
-    Home(),
-    resource(),
-    addTask(),
-    bot(),
-    profile(),
-  ];
+  final screens = [Home(), resource(), addTask(), bot(), profile()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,26 +23,41 @@ class _NavigationState extends State<Navigation> {
       bottomNavigationBar: NavigationBar(
         selectedIndex: index,
         onDestinationSelected: (index) => setState(() => this.index = index),
-        height: 60,
+        height: 70,
         destinations: [
           NavigationDestination(
-            icon: Icon(Icons.home),
+            icon: Icon(
+              Icons.home,
+              size: 27,
+            ),
             label: "Home ",
           ),
           NavigationDestination(
-            icon: Icon(Icons.book_outlined),
+            icon: Icon(
+              Icons.book_outlined,
+              size: 27,
+            ),
             label: "Education ",
           ),
           NavigationDestination(
-            icon: Icon(Icons.add_circle_outline_rounded),
+            icon: Icon(
+              Icons.add_circle_outline_rounded,
+              size: 27,
+            ),
             label: "Create Task ",
           ),
           NavigationDestination(
-            icon: Icon(Icons.stacked_bar_chart_rounded),
+            icon: Icon(
+              Icons.stacked_bar_chart_rounded,
+              size: 27,
+            ),
             label: "Chat Bot",
           ),
           NavigationDestination(
-            icon: Icon(Icons.account_circle),
+            icon: Icon(
+              Icons.account_circle,
+              size: 27,
+            ),
             label: "Profile",
           ),
         ],

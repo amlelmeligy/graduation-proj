@@ -4,7 +4,12 @@ import 'package:proj/home/Home.dart';
 
 // chaaaaaaaaaaaattttttttttt
 
-class chat extends StatelessWidget {
+class chat extends StatefulWidget {
+  @override
+  State<chat> createState() => _chatState();
+}
+
+class _chatState extends State<chat> {
   int index = 0;
 
   @override
@@ -119,5 +124,10 @@ class chat extends StatelessWidget {
     );
   }
 
-  void _changeItem(int value) {}
+  void _changeItem(int value) {
+    print(value);
+    setState(() {
+      index = value;
+    });
+  }
 }
