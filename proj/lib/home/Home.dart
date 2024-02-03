@@ -14,25 +14,6 @@ class Home extends StatefulWidget {
   State<Home> createState() => _HomeState();
 }
 
-List item = [
-  {
-    "name": "All Tasks",
-    "iconname": Icons.task,
-  },
-  {
-    "name": "Favorite ",
-    "iconname": Icons.star,
-  },
-  {
-    "name": "Trash",
-    "iconname": Icons.restore_from_trash_rounded,
-  },
-  {
-    "name": "Hidden",
-    "iconname": Icons.remove_red_eye_sharp,
-  },
-];
-
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
@@ -76,60 +57,152 @@ class _HomeState extends State<Home> {
           ),
 /////////////////////////////////////////////////////////////////////////////
           Container(
-            // padding: EdgeInsets.all(5),
-            child: GridView.builder(
-              physics: NeverScrollableScrollPhysics(),
+            child: GridView(
+              physics: const NeverScrollableScrollPhysics(),
               shrinkWrap: true,
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2, mainAxisExtent: 150),
-              itemCount: item.length,
-              itemBuilder: (context, i) {
-                return InkWell(
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => task()),
-                    );
-                  },
-                  child: Container(
-                    padding: EdgeInsets.all(4),
-                    child: Container(
-                      decoration: BoxDecoration(
-                          border: Border.all(
-                              width: 2.0,
-                              color: Color.fromARGB(255, 139, 165, 186),
-                              style: BorderStyle.solid),
-                          borderRadius: BorderRadius.all(Radius.circular(20))),
-                      child: Column(
-                        children: [
-                          Container(
-                            height: 30,
-                          ),
-                          Container(
-                            padding: EdgeInsets.only(top: 5),
-                            child: Text(
-                              item[i]["name"],
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                          ),
-                          Divider(
-                              color: Color.fromARGB(255, 139, 165, 186),
-                              thickness: 2),
-                          // Container(
-                          //   height: 5,
-                          // ),
-                          Container(
+                  crossAxisCount: 2,
+                  mainAxisExtent: 150,
+                  crossAxisSpacing: 15,
+                  mainAxisSpacing: 15),
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                      border: Border.all(
+                          color: Color.fromARGB(255, 167, 191, 211), width: 2),
+                      color: Color.fromARGB(255, 251, 248, 248),
+                      borderRadius: BorderRadius.circular(20)),
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => task()),
+                      );
+                    },
+                    child: Column(
+                      children: [
+                        DecoratedBox(
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(25)),
+                        ),
+                        Container(
+                          height: 30,
+                        ),
+                        Container(
+                          padding: EdgeInsets.only(top: 5),
+                          child: Text("All Tasks",
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                        ),
+                        Divider(
+                          color: Color.fromARGB(255, 167, 191, 211),
+                          thickness: 2,
+                        ),
+                        Container(
                             padding: EdgeInsets.only(top: 5),
                             child: Icon(
-                              item[i]["iconname"],
+                              Icons.task,
                               size: 40,
-                            ),
-                          ),
-                        ],
-                      ),
+                            )),
+                      ],
                     ),
                   ),
-                );
-              },
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                      border: Border.all(
+                          color: Color.fromARGB(255, 167, 191, 211), width: 2),
+                      color: Color.fromARGB(255, 251, 248, 248),
+                      borderRadius: BorderRadius.circular(20)),
+                  child: InkWell(
+                    onTap: () {},
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 30,
+                        ),
+                        Container(
+                          padding: EdgeInsets.only(top: 5),
+                          child: Text("Favorite",
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                        ),
+                        Divider(
+                          color: Color.fromARGB(255, 167, 191, 211),
+                          thickness: 2,
+                        ),
+                        Container(
+                            padding: EdgeInsets.only(top: 5),
+                            child: Icon(
+                              Icons.star,
+                              size: 40,
+                            )),
+                      ],
+                    ),
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                      border: Border.all(
+                          color: Color.fromARGB(255, 167, 191, 211), width: 2),
+                      color: Color.fromARGB(255, 251, 248, 248),
+                      borderRadius: BorderRadius.circular(20)),
+                  child: InkWell(
+                    onTap: () {},
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 30,
+                        ),
+                        Container(
+                          padding: EdgeInsets.only(top: 5),
+                          child: Text("Trash",
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                        ),
+                        Divider(
+                          color: Color.fromARGB(255, 167, 191, 211),
+                          thickness: 2,
+                        ),
+                        Container(
+                            padding: EdgeInsets.only(top: 5),
+                            child: Icon(
+                              Icons.restore_from_trash,
+                              size: 40,
+                            )),
+                      ],
+                    ),
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                      border: Border.all(
+                          color: Color.fromARGB(255, 167, 191, 211), width: 2),
+                      color: Color.fromARGB(255, 251, 248, 248),
+                      borderRadius: BorderRadius.circular(20)),
+                  child: InkWell(
+                    onTap: () {},
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 30,
+                        ),
+                        Container(
+                          padding: EdgeInsets.only(top: 5),
+                          child: Text("Hidden",
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                        ),
+                        Divider(
+                          color: Color.fromARGB(255, 167, 191, 211),
+                          thickness: 2,
+                        ),
+                        Container(
+                            padding: EdgeInsets.only(top: 5),
+                            child: Icon(
+                              Icons.remove_red_eye,
+                              size: 40,
+                            )),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
 

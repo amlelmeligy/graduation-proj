@@ -31,7 +31,7 @@ class input_field extends StatelessWidget {
             margin: EdgeInsets.only(top: 8),
             padding: EdgeInsets.only(left: 14),
             decoration: BoxDecoration(
-                border: Border.all(color: Colors.grey, width: 1.0),
+                border: Border.all(color: Colors.grey, width: 1.2),
                 borderRadius: BorderRadius.circular(12)),
             child: Row(
               children: [
@@ -41,11 +41,8 @@ class input_field extends StatelessWidget {
                   cursorColor: Colors.grey,
                   controller: controller,
                   decoration: InputDecoration(
-                      hintText: hint,
-                      focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(
-                        color: Theme.of(context).primaryColorDark!,
-                      ))),
+                    hintText: hint,
+                  ),
                 ))
               ],
             ),
