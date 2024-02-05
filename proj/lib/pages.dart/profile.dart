@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proj/pages.dart/appointment.dart';
 import 'package:proj/pages.dart/dectors.dart';
 
 class profile extends StatefulWidget {
@@ -43,6 +44,7 @@ class _profileState extends State<profile> {
             Center(
               child: TextButton(onPressed: () {}, child: Text("Edit Profile")),
             ),
+            ////////////////////////////////////////////////////////////////////////
             InkWell(
               onTap: () {
                 showDialog(
@@ -119,6 +121,7 @@ class _profileState extends State<profile> {
                 ),
               ),
             ),
+            ////////////////////////////////////////////////////////////////////////////
             InkWell(
               onTap: () {
                 Navigator.of(context).push(
@@ -151,9 +154,12 @@ class _profileState extends State<profile> {
                 ),
               ),
             ),
+            ////////////////////////////////////////////////////////////////////////////
             InkWell(
               onTap: () {
-                print("object");
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => appointment()),
+                );
               },
               child: Container(
                 decoration: BoxDecoration(
@@ -181,6 +187,7 @@ class _profileState extends State<profile> {
                 ),
               ),
             ),
+            ////////////////////////////////////////////////////////////////////////////
             InkWell(
               onTap: () {
                 print("object");
@@ -211,6 +218,7 @@ class _profileState extends State<profile> {
                 ),
               ),
             ),
+            ////////////////////////////////////////////////////////////////////////////
             InkWell(
               onTap: () {
                 print("object");
@@ -241,6 +249,7 @@ class _profileState extends State<profile> {
                 ),
               ),
             ),
+            ////////////////////////////////////////////////////////////////////////////
             InkWell(
               onTap: () {
                 print("object");
@@ -271,6 +280,7 @@ class _profileState extends State<profile> {
                 ),
               ),
             ),
+            ////////////////////////////////////////////////////////////////////////////
             InkWell(
               onTap: () {
                 print("object");

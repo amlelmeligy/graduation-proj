@@ -40,7 +40,7 @@ class _doctorsState extends State<doctors> {
                   )),
             ),
           ),
-//////////////////////////////////////////////////////////////////////////////////////////
+////
           aboutDoctors(
               img: "1.png",
               name: "Dr.Ahmed",
