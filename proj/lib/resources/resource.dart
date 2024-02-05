@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:proj/resources/model.dart';
 import 'package:proj/resources/title.dart';
@@ -69,32 +71,64 @@ class _resourceState extends State<resource> {
                         onTap: () {
                           showDialog(
                             context: context,
-                            builder: (context) {
-                              return Container(
-                                margin: EdgeInsets.all(15),
+                            builder: (BuildContext context) {
+                              return Dialog(
+                                elevation: 0,
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.all(
+                                        Radius.circular(15.0))),
                                 child: Container(
-                                  child: AlertDialog(
-                                    contentPadding: EdgeInsets.symmetric(
-                                        vertical: 20, horizontal: 40),
-                                    title: Text(
-                                      " Some Information about this Book: ",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 15),
+                                  padding: EdgeInsets.all(10),
+                                  width: 450,
+                                  height: 300,
+                                  child: Center(
+                                    child: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      mainAxisSize: MainAxisSize.min,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: <Widget>[
+                                        Text(
+                                          "Some Information about this Book: ",
+                                          style: TextStyle(
+                                              fontSize: 18,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                        Container(
+                                          padding: EdgeInsets.only(
+                                              top: 8, bottom: 8),
+                                          child: Text(
+                                            " Abstract : ",
+                                            style: TextStyle(
+                                              fontSize: 18,
+                                              color: Colors.black,
+                                            ),
+                                          ),
+                                        ),
+                                        Container(
+                                          padding: EdgeInsets.only(bottom: 8),
+                                          child: Text(
+                                            "Embark on an exciting journey into the world of reading with Adventures in Reading: A Third Grade Expedition. This engaging English book for third graders introduces young learners to a diverse array of literary genres, from captivating tales of adventure and fantasy to heartwarming stories of friendship and self-discovery. Through engaging text, colorful illustrations, and thought-provoking discussion prompts, students embark on a literary adventure, exploring the power of stories to transport them to different worlds, ignite their imaginations, and connect them to the human experience.",
+                                            style: TextStyle(
+                                                fontSize: 10,
+                                                color: Colors.grey),
+                                          ),
+                                        ),
+                                        Text(
+                                          "You can download this book from that link :",
+                                          style: TextStyle(
+                                              fontSize: 15,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                        TextButton(
+                                            onPressed: () {},
+                                            child: Text(
+                                              "https://www.mlzamty.com/review-english-third-primary/",
+                                              style: TextStyle(fontSize: 10),
+                                            ))
+                                      ],
                                     ),
-                                    content: Text(
-                                        "Abstract :  A lively and informative grade 4 science book that makes learning about the natural world an exciting adventure.Filled with vibrant illustrations, hands-on activities, and real-world examples, this book fosters a deep appreciation for scientific exploration and ignites a passion for learning in young minds.                                                                                                                                                                                                                                                          "
-                                        "You can download this book from that link :                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               "
-                                        "https://www.mlzamty.com/download-science-note-fourth-grade-primary-school-first-term/",
-                                        style: TextStyle(
-                                            fontSize: 12,
-                                            color:
-                                                Color.fromARGB(255, 0, 0, 0))),
-                                    backgroundColor:
-                                        Color.fromARGB(255, 211, 216, 223),
-                                    shape: RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(15)),
                                   ),
                                 ),
                               );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proj/pages.dart/dectors.dart';
 
 class profile extends StatefulWidget {
   const profile({super.key});
@@ -44,7 +45,53 @@ class _profileState extends State<profile> {
             ),
             InkWell(
               onTap: () {
-                print("object");
+                showDialog(
+                  context: context,
+                  builder: (BuildContext context) {
+                    return Dialog(
+                      elevation: 0,
+                      shape: RoundedRectangleBorder(
+                          borderRadius:
+                              BorderRadius.all(Radius.circular(18.0))),
+                      child: Container(
+                        width: 300,
+                        height: 260,
+                        child: Center(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.min,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              Image.asset(
+                                'images/image1 (15).jpg',
+                              ),
+                              Text(
+                                "Congratulations",
+                                style: TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.bold),
+                              ),
+                              Container(
+                                padding: EdgeInsets.only(top: 4, bottom: 4),
+                                child: Text(
+                                  "You’ve earned FIRST place ",
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    color: Color.fromARGB(255, 62, 123, 173),
+                                  ),
+                                ),
+                              ),
+                              Text(
+                                "Always look for the best",
+                                style:
+                                    TextStyle(fontSize: 18, color: Colors.grey),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    );
+                  },
+                );
               },
               child: Container(
                 decoration: BoxDecoration(
@@ -74,33 +121,8 @@ class _profileState extends State<profile> {
             ),
             InkWell(
               onTap: () {
-                showDialog(
-                  context: context,
-                  builder: (context) {
-                    return Container(
-                      margin: EdgeInsets.all(15),
-                      child: Container(
-                        child: AlertDialog(
-                          contentPadding: EdgeInsets.symmetric(
-                              vertical: 20, horizontal: 40),
-                          title: Text(
-                            "Congratulations",
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold, fontSize: 18),
-                          ),
-                          content: Text(
-                              "You’ve earned Second place"
-                              "Always look for the best",
-                              style: TextStyle(
-                                  fontSize: 12,
-                                  color: Color.fromARGB(255, 0, 0, 0))),
-                          backgroundColor: Color.fromARGB(255, 211, 216, 223),
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(15)),
-                        ),
-                      ),
-                    );
-                  },
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => doctors()),
                 );
               },
               child: Container(
