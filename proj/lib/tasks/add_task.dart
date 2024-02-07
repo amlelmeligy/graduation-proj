@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:proj/tasks/input_field.dart';
 
 class addTask extends StatefulWidget {
   const addTask({super.key});
@@ -19,6 +18,7 @@ class _addTaskState extends State<addTask> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        color: Color.fromRGBO(239, 241, 241, 0.965),
         padding: EdgeInsets.only(left: 20, right: 20),
         child: SingleChildScrollView(
           child:
@@ -30,6 +30,22 @@ class _addTaskState extends State<addTask> {
                 "Create New Task",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
               )),
+            ),
+            Container(
+              padding: EdgeInsets.only(top: 10),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Schedule",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                  Text(
+                    "12 October",
+                    style: TextStyle(fontSize: 14),
+                  )
+                ],
+              ),
             ),
             Container(
               padding: EdgeInsets.only(top: 10),
@@ -291,5 +307,57 @@ class _addTaskState extends State<addTask> {
     setState(() {
       index = value;
     });
+  }
+}
+
+class input_field extends StatelessWidget {
+  final String title;
+  final String hint;
+  final TextEditingController? controller;
+  // final Widget widget;
+
+  const input_field({
+    super.key,
+    required this.title,
+    required this.hint,
+    this.controller,
+    // required this.widget,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(top: 16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            title,
+            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+          ),
+          Container(
+            height: 53,
+            margin: EdgeInsets.only(top: 8),
+            padding: EdgeInsets.only(left: 14),
+            decoration: BoxDecoration(
+                border: Border.all(color: Colors.grey, width: 1.2),
+                borderRadius: BorderRadius.circular(12)),
+            child: Row(
+              children: [
+                Expanded(
+                    child: TextFormField(
+                  autocorrect: false,
+                  cursorColor: Colors.grey,
+                  controller: controller,
+                  decoration: InputDecoration(
+                    hintText: hint,
+                  ),
+                ))
+              ],
+            ),
+          )
+        ],
+      ),
+    );
   }
 }

@@ -37,28 +37,29 @@ class _chatState extends State<chat> {
             onTap: _changeItem,
           ),
           body: Container(
-            color: Color.fromARGB(255, 238, 243, 246),
+            color: Color.fromRGBO(239, 241, 241, 0.965),
             padding: EdgeInsets.all(10),
             child: ListView(
               children: [
                 Container(
-                  padding: EdgeInsets.only(left: 15, bottom: 10),
+                  padding: EdgeInsets.only(left: 15, bottom: 10, top: 15),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
                         "community",
                         style: TextStyle(
-                            fontSize: 40, fontWeight: FontWeight.bold),
+                            fontSize: 25, fontWeight: FontWeight.bold),
                       ),
                       Icon(
                         Icons.settings,
-                        size: 40,
+                        size: 25,
                       )
                     ],
                   ),
                 ),
                 Container(
+                  height: 58,
                   padding: EdgeInsets.all(5),
                   child: TextField(
                     decoration: InputDecoration(

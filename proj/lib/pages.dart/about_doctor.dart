@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class aboutDoctors extends StatelessWidget {
   final String img;
@@ -59,7 +60,11 @@ class aboutDoctors extends StatelessWidget {
         ),
         Column(
           children: [
-            Icon(Icons.ac_unit),
+            Icon(
+              FontAwesomeIcons.solidHeart,
+              color: Color.fromARGB(255, 61, 125, 177),
+              size: 20,
+            ),
             Container(
               height: 70,
             ),

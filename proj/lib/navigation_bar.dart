@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:proj/chats/chat.dart';
 import 'package:proj/home/Home.dart';
 import 'package:proj/pages.dart/bot.dart';
@@ -28,12 +29,14 @@ class _NavigationState extends State<Navigation> {
           NavigationDestination(
             icon: Icon(
               Icons.home,
+              color: Colors.grey[900],
               size: 27,
             ),
             label: "Home ",
           ),
           NavigationDestination(
             icon: Icon(
+              color: Colors.grey[900],
               Icons.book_outlined,
               size: 27,
             ),
@@ -41,20 +44,23 @@ class _NavigationState extends State<Navigation> {
           ),
           NavigationDestination(
             icon: Icon(
+              color: Colors.grey[900],
               Icons.add_circle_outline_rounded,
               size: 27,
             ),
             label: "Create Task ",
           ),
           NavigationDestination(
-            icon: Icon(
+            icon: FaIcon(
               Icons.stacked_bar_chart_rounded,
+              color: Colors.grey[900],
               size: 27,
             ),
             label: "Chat Bot",
           ),
           NavigationDestination(
-            icon: Icon(
+            icon: FaIcon(
+              color: Colors.grey[900],
               Icons.account_circle,
               size: 27,
             ),

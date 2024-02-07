@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:proj/chats/chat.dart';
-import 'package:proj/chats/aboutus.dart';
 import 'package:proj/home/custom.dart';
-import 'package:proj/pages.dart/bot.dart';
-import 'package:proj/pages.dart/profile.dart';
-import 'package:proj/resources/resource.dart';
 import 'package:proj/tasks/task.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -19,34 +17,41 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        color: Color.fromRGBO(239, 241, 241, 0.965),
         padding: EdgeInsets.all(20),
         child: ListView(children: [
           Container(
             child: Row(
               children: [
-                Expanded(
-                    child: TextFormField(
-                  decoration: InputDecoration(
-                      hintText: "Search",
-                      border: InputBorder.none,
-                      fillColor: const Color.fromARGB(255, 250, 249, 249),
+                Container(
+                  color: Color.fromRGBO(239, 241, 241, 0.965),
+                  width: 310,
+                  height: 45,
+                  child: TextField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                          borderSide: BorderSide.none,
+                          borderRadius: BorderRadius.circular(25)),
+                      labelText: "Search  ",
+                      fillColor: Colors.white,
                       filled: true,
                       prefixIcon: Icon(
                         Icons.search,
+                        color: Colors.black,
                         size: 30,
                       ),
-                      iconColor: Colors.black),
-                )),
-                Container(
-                  padding: const EdgeInsets.only(left: 10),
-                  child: IconButton(
-                    onPressed: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => chat()),
-                      );
-                    },
-                    icon: Icon(Icons.message),
+                    ),
                   ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(left: 13),
+                  child: IconButton(
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => chat()),
+                        );
+                      },
+                      icon: FaIcon(FontAwesomeIcons.comment)),
                 )
               ],
             ),
@@ -90,7 +95,8 @@ class _HomeState extends State<Home> {
                         Container(
                           padding: EdgeInsets.only(top: 5),
                           child: Text("All Tasks",
-                              style: TextStyle(fontWeight: FontWeight.bold)),
+                              style: TextStyle(
+                                  fontSize: 17, fontWeight: FontWeight.bold)),
                         ),
                         Divider(
                           color: Color.fromARGB(255, 167, 191, 211),
@@ -100,6 +106,7 @@ class _HomeState extends State<Home> {
                             padding: EdgeInsets.only(top: 5),
                             child: Icon(
                               Icons.task,
+                              color: Color.fromARGB(255, 61, 125, 177),
                               size: 40,
                             )),
                       ],
@@ -122,7 +129,8 @@ class _HomeState extends State<Home> {
                         Container(
                           padding: EdgeInsets.only(top: 5),
                           child: Text("Favorite",
-                              style: TextStyle(fontWeight: FontWeight.bold)),
+                              style: TextStyle(
+                                  fontSize: 17, fontWeight: FontWeight.bold)),
                         ),
                         Divider(
                           color: Color.fromARGB(255, 167, 191, 211),
@@ -132,6 +140,7 @@ class _HomeState extends State<Home> {
                             padding: EdgeInsets.only(top: 5),
                             child: Icon(
                               Icons.star,
+                              color: Color.fromARGB(255, 234, 180, 21),
                               size: 40,
                             )),
                       ],
@@ -154,7 +163,8 @@ class _HomeState extends State<Home> {
                         Container(
                           padding: EdgeInsets.only(top: 5),
                           child: Text("Trash",
-                              style: TextStyle(fontWeight: FontWeight.bold)),
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 17)),
                         ),
                         Divider(
                           color: Color.fromARGB(255, 167, 191, 211),
@@ -164,6 +174,7 @@ class _HomeState extends State<Home> {
                             padding: EdgeInsets.only(top: 5),
                             child: Icon(
                               Icons.restore_from_trash,
+                              color: Color.fromARGB(255, 61, 125, 177),
                               size: 40,
                             )),
                       ],
@@ -186,7 +197,8 @@ class _HomeState extends State<Home> {
                         Container(
                           padding: EdgeInsets.only(top: 5),
                           child: Text("Hidden",
-                              style: TextStyle(fontWeight: FontWeight.bold)),
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 17)),
                         ),
                         Divider(
                           color: Color.fromARGB(255, 167, 191, 211),
@@ -194,9 +206,10 @@ class _HomeState extends State<Home> {
                         ),
                         Container(
                             padding: EdgeInsets.only(top: 5),
-                            child: Icon(
-                              Icons.remove_red_eye,
-                              size: 40,
+                            child: FaIcon(
+                              FontAwesomeIcons.eyeSlash,
+                              color: Color.fromARGB(255, 61, 125, 177),
+                              size: 30,
                             )),
                       ],
                     ),
@@ -205,8 +218,14 @@ class _HomeState extends State<Home> {
               ],
             ),
           ),
+          Container(
+            height: 20,
+          ),
 
           Container(
+            decoration: BoxDecoration(
+                color: Color.fromRGBO(176, 202, 205, 100),
+                borderRadius: BorderRadius.circular(15)),
             child: InkWell(
               onTap: () {},
               child: CustomListtile(
@@ -217,6 +236,12 @@ class _HomeState extends State<Home> {
             ),
           ),
           Container(
+            height: 10,
+          ),
+          Container(
+            decoration: BoxDecoration(
+                color: Color.fromRGBO(176, 202, 205, 100),
+                borderRadius: BorderRadius.circular(15)),
             child: InkWell(
               onTap: () {},
               child: CustomListtile(
@@ -227,6 +252,12 @@ class _HomeState extends State<Home> {
             ),
           ),
           Container(
+            height: 10,
+          ),
+          Container(
+            decoration: BoxDecoration(
+                color: Color.fromRGBO(176, 202, 205, 100),
+                borderRadius: BorderRadius.circular(15)),
             child: InkWell(
               onTap: () {},
               child: CustomListtile(
@@ -237,6 +268,12 @@ class _HomeState extends State<Home> {
             ),
           ),
           Container(
+            height: 10,
+          ),
+          Container(
+            decoration: BoxDecoration(
+                color: Color.fromRGBO(176, 202, 205, 100),
+                borderRadius: BorderRadius.circular(15)),
             child: InkWell(
               onTap: () {},
               child: CustomListtile(
@@ -247,6 +284,12 @@ class _HomeState extends State<Home> {
             ),
           ),
           Container(
+            height: 10,
+          ),
+          Container(
+            decoration: BoxDecoration(
+                color: Color.fromRGBO(176, 202, 205, 100),
+                borderRadius: BorderRadius.circular(15)),
             child: InkWell(
               onTap: () {},
               child: CustomListtile(
@@ -257,6 +300,12 @@ class _HomeState extends State<Home> {
             ),
           ),
           Container(
+            height: 10,
+          ),
+          Container(
+            decoration: BoxDecoration(
+                color: Color.fromRGBO(176, 202, 205, 100),
+                borderRadius: BorderRadius.circular(15)),
             child: InkWell(
               onTap: () {},
               child: CustomListtile(
@@ -267,6 +316,12 @@ class _HomeState extends State<Home> {
             ),
           ),
           Container(
+            height: 10,
+          ),
+          Container(
+            decoration: BoxDecoration(
+                color: Color.fromRGBO(176, 202, 205, 100),
+                borderRadius: BorderRadius.circular(15)),
             child: InkWell(
               onTap: () {},
               child: CustomListtile(
@@ -277,6 +332,12 @@ class _HomeState extends State<Home> {
             ),
           ),
           Container(
+            height: 10,
+          ),
+          Container(
+            decoration: BoxDecoration(
+                color: Color.fromRGBO(176, 202, 205, 100),
+                borderRadius: BorderRadius.circular(15)),
             child: InkWell(
               onTap: () {},
               child: CustomListtile(
@@ -287,6 +348,12 @@ class _HomeState extends State<Home> {
             ),
           ),
           Container(
+            height: 10,
+          ),
+          Container(
+            decoration: BoxDecoration(
+                color: Color.fromRGBO(176, 202, 205, 100),
+                borderRadius: BorderRadius.circular(15)),
             child: InkWell(
               onTap: () {},
               child: CustomListtile(
@@ -297,6 +364,12 @@ class _HomeState extends State<Home> {
             ),
           ),
           Container(
+            height: 10,
+          ),
+          Container(
+            decoration: BoxDecoration(
+                color: Color.fromRGBO(176, 202, 205, 100),
+                borderRadius: BorderRadius.circular(15)),
             child: InkWell(
               onTap: () {},
               child: CustomListtile(

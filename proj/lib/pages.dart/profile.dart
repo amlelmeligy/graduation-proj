@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:proj/pages.dart/appointment.dart';
-import 'package:proj/pages.dart/dectors.dart';
+import 'package:proj/pages.dart/doctors.dart';
+import 'package:proj/pages.dart/meeting.dart';
+import 'package:proj/pages.dart/tips.dart';
 
 class profile extends StatefulWidget {
   const profile({super.key});
@@ -190,7 +192,9 @@ class _profileState extends State<profile> {
             ////////////////////////////////////////////////////////////////////////////
             InkWell(
               onTap: () {
-                print("object");
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => meeting()),
+                );
               },
               child: Container(
                 decoration: BoxDecoration(
@@ -252,7 +256,9 @@ class _profileState extends State<profile> {
             ////////////////////////////////////////////////////////////////////////////
             InkWell(
               onTap: () {
-                print("object");
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => tips()),
+                );
               },
               child: Container(
                 decoration: BoxDecoration(

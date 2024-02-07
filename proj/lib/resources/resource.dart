@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:proj/resources/model.dart';
 import 'package:proj/resources/title.dart';
 
@@ -45,9 +46,9 @@ class _resourceState extends State<resource> {
                     "Educational Resources",
                     style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                   ),
-                  Icon(
-                    Icons.book_outlined,
-                    size: 30,
+                  FaIcon(
+                    FontAwesomeIcons.book,
+                    size: 26,
                   )
                 ],
               ),

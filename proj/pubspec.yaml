@@ -31,14 +31,20 @@ dependencies:
   flutter:
     sdk: flutter
   table_calendar: ^3.0.9
+  carousel_slider: ^4.2.1
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  font_awesome_flutter: ^10.7.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+
+  
+
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -80,6 +86,10 @@ flutter:
     - images/1.png
     - images/2.png
     - images/3.png
+    - images/4.png
+    - images/5.png
+    - images/Frame 1.png
+    - images/Group 3.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
