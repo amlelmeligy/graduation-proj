@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proj/pages.dart/analytics.dart';
 import 'package:proj/pages.dart/appointment.dart';
 import 'package:proj/pages.dart/doctors.dart';
 import 'package:proj/pages.dart/meeting.dart';
@@ -225,7 +226,9 @@ class _profileState extends State<profile> {
             ////////////////////////////////////////////////////////////////////////////
             InkWell(
               onTap: () {
-                print("object");
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => analytics()),
+                );
               },
               child: Container(
                 decoration: BoxDecoration(

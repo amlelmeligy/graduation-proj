@@ -90,7 +90,7 @@ class _HomeState extends State<Home> {
                               borderRadius: BorderRadius.circular(25)),
                         ),
                         Container(
-                          height: 30,
+                          height: 25,
                         ),
                         Container(
                           padding: EdgeInsets.only(top: 5),
@@ -98,18 +98,20 @@ class _HomeState extends State<Home> {
                               style: TextStyle(
                                   fontSize: 17, fontWeight: FontWeight.bold)),
                         ),
-                        Divider(
-                          color: Color.fromARGB(255, 167, 191, 211),
-                          thickness: 2,
-                          endIndent: 5,
+                        Container(
+                          padding: EdgeInsets.all(10),
+                          child: Divider(
+                            color: Color.fromARGB(255, 167, 191, 211),
+                            thickness: 2,
+                            endIndent: 7,
+                          ),
                         ),
                         Container(
-                            padding: EdgeInsets.only(top: 5),
                             child: Icon(
-                              Icons.task,
-                              color: Color.fromARGB(255, 61, 125, 177),
-                              size: 40,
-                            )),
+                          Icons.task,
+                          color: Color.fromARGB(255, 61, 125, 177),
+                          size: 40,
+                        )),
                       ],
                     ),
                   ),
@@ -125,7 +127,7 @@ class _HomeState extends State<Home> {
                     child: Column(
                       children: [
                         Container(
-                          height: 30,
+                          height: 25,
                         ),
                         Container(
                           padding: EdgeInsets.only(top: 5),
@@ -133,17 +135,20 @@ class _HomeState extends State<Home> {
                               style: TextStyle(
                                   fontSize: 17, fontWeight: FontWeight.bold)),
                         ),
-                        Divider(
-                          color: Color.fromARGB(255, 167, 191, 211),
-                          thickness: 2,
+                        Container(
+                          padding: EdgeInsets.all(10),
+                          child: Divider(
+                            color: Color.fromARGB(255, 167, 191, 211),
+                            thickness: 2,
+                            endIndent: 7,
+                          ),
                         ),
                         Container(
-                            padding: EdgeInsets.only(top: 5),
                             child: Icon(
-                              Icons.star,
-                              color: Color.fromARGB(255, 234, 180, 21),
-                              size: 40,
-                            )),
+                          Icons.star,
+                          color: Color.fromARGB(255, 234, 180, 21),
+                          size: 40,
+                        )),
                       ],
                     ),
                   ),
@@ -159,7 +164,7 @@ class _HomeState extends State<Home> {
                     child: Column(
                       children: [
                         Container(
-                          height: 30,
+                          height: 25,
                         ),
                         Container(
                           padding: EdgeInsets.only(top: 5),
@@ -167,17 +172,20 @@ class _HomeState extends State<Home> {
                               style: TextStyle(
                                   fontWeight: FontWeight.bold, fontSize: 17)),
                         ),
-                        Divider(
-                          color: Color.fromARGB(255, 167, 191, 211),
-                          thickness: 2,
+                        Container(
+                          padding: EdgeInsets.all(10),
+                          child: Divider(
+                            color: Color.fromARGB(255, 167, 191, 211),
+                            thickness: 2,
+                            endIndent: 7,
+                          ),
                         ),
                         Container(
-                            padding: EdgeInsets.only(top: 5),
                             child: Icon(
-                              Icons.restore_from_trash,
-                              color: Color.fromARGB(255, 61, 125, 177),
-                              size: 40,
-                            )),
+                          Icons.restore_from_trash,
+                          color: Color.fromARGB(255, 61, 125, 177),
+                          size: 40,
+                        )),
                       ],
                     ),
                   ),
@@ -193,7 +201,7 @@ class _HomeState extends State<Home> {
                     child: Column(
                       children: [
                         Container(
-                          height: 30,
+                          height: 25,
                         ),
                         Container(
                           padding: EdgeInsets.only(top: 5),
@@ -201,17 +209,20 @@ class _HomeState extends State<Home> {
                               style: TextStyle(
                                   fontWeight: FontWeight.bold, fontSize: 17)),
                         ),
-                        Divider(
-                          color: Color.fromARGB(255, 167, 191, 211),
-                          thickness: 2,
+                        Container(
+                          padding: EdgeInsets.all(10),
+                          child: Divider(
+                            color: Color.fromARGB(255, 167, 191, 211),
+                            thickness: 2,
+                            endIndent: 7,
+                          ),
                         ),
                         Container(
-                            padding: EdgeInsets.only(top: 5),
                             child: FaIcon(
-                              FontAwesomeIcons.eyeSlash,
-                              color: Color.fromARGB(255, 61, 125, 177),
-                              size: 30,
-                            )),
+                          FontAwesomeIcons.eyeSlash,
+                          color: Color.fromARGB(255, 61, 125, 177),
+                          size: 30,
+                        )),
                       ],
                     ),
                   ),
