@@ -101,6 +101,7 @@ class _HomeState extends State<Home> {
                         Divider(
                           color: Color.fromARGB(255, 167, 191, 211),
                           thickness: 2,
+                          endIndent: 5,
                         ),
                         Container(
                             padding: EdgeInsets.only(top: 5),

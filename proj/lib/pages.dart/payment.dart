@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:proj/pages.dart/thank_you.dart';
 
 class payment extends StatefulWidget {
   const payment({super.key});
@@ -194,7 +195,7 @@ class _paymentState extends State<payment> {
                         borderRadius: BorderRadius.circular(25))),
                 onPressed: () {
                   Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => payment()),
+                    MaterialPageRoute(builder: (context) => thankYou()),
                   );
                 },
                 child: Text(
