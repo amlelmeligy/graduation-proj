@@ -12,11 +12,11 @@ class _analyticsState extends State<analytics> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        padding: EdgeInsets.all(10),
+        padding: EdgeInsets.all(11),
         child: ListView(
           children: [
             Container(
-              padding: EdgeInsets.only(top: 20),
+              padding: EdgeInsets.only(top: 15, bottom: 15),
               child: Text(
                 "User Analytics",
                 style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
@@ -24,7 +24,7 @@ class _analyticsState extends State<analytics> {
               ),
             ),
             Container(
-              padding: EdgeInsets.only(top: 15, bottom: 15),
+              padding: EdgeInsets.only(top: 15, bottom: 17),
               child: Text(
                 "Overview",
                 style: TextStyle(fontSize: 19, fontWeight: FontWeight.bold),
@@ -35,71 +35,71 @@ class _analyticsState extends State<analytics> {
                 children: [
                   Container(
                     padding: EdgeInsets.all(10),
-                    width: 120,
-                    height: 75,
+                    width: 115,
+                    height: 70,
                     decoration: BoxDecoration(
                         border: Border.all(
-                            color: Color.fromARGB(255, 62, 123, 173), width: 2),
+                            color: Color.fromARGB(255, 48, 92, 127), width: 2),
                         borderRadius: BorderRadius.circular(15)),
                     child: Column(
                       children: [
                         Text(
                           "Total",
                           style: TextStyle(
-                              fontSize: 20, fontWeight: FontWeight.bold),
+                              fontSize: 18, fontWeight: FontWeight.bold),
                         ),
                         Text(
                           "12",
                           style: TextStyle(
-                              fontSize: 20, fontWeight: FontWeight.bold),
+                              fontSize: 18, fontWeight: FontWeight.bold),
                         )
                       ],
                     ),
                   ),
-                  SizedBox(width: 10),
+                  SizedBox(width: 17),
                   Container(
                     padding: EdgeInsets.all(10),
-                    width: 130,
-                    height: 75,
+                    width: 125,
+                    height: 70,
                     decoration: BoxDecoration(
                         border: Border.all(
-                            color: Color.fromARGB(255, 62, 123, 173), width: 2),
+                            color: Color.fromARGB(255, 48, 92, 127), width: 2),
                         borderRadius: BorderRadius.circular(15)),
                     child: Column(
                       children: [
                         Text(
                           "Completed",
                           style: TextStyle(
-                              fontSize: 20, fontWeight: FontWeight.bold),
+                              fontSize: 18, fontWeight: FontWeight.bold),
                         ),
                         Text(
                           "8",
                           style: TextStyle(
-                              fontSize: 20, fontWeight: FontWeight.bold),
+                              fontSize: 18, fontWeight: FontWeight.bold),
                         )
                       ],
                     ),
                   ),
-                  SizedBox(width: 10),
+                  SizedBox(width: 17),
                   Container(
                     padding: EdgeInsets.all(10),
-                    width: 120,
-                    height: 75,
+                    width: 115,
+                    height: 70,
                     decoration: BoxDecoration(
                         border: Border.all(
-                            color: Color.fromARGB(255, 62, 123, 173), width: 2),
+                            color: Color.fromARGB(255, 48, 92, 127), width: 2),
                         borderRadius: BorderRadius.circular(15)),
                     child: Column(
                       children: [
                         Text(
                           "Pending",
                           style: TextStyle(
-                              fontSize: 20, fontWeight: FontWeight.bold),
+                              fontSize: 18, fontWeight: FontWeight.bold),
                         ),
                         Text(
                           "4",
                           style: TextStyle(
-                              fontSize: 20, fontWeight: FontWeight.bold),
+                              fontSize: 18, fontWeight: FontWeight.bold),
                         )
                       ],
                     ),
@@ -109,7 +109,7 @@ class _analyticsState extends State<analytics> {
             ),
             //////////////////////////////////////////////////////////////////////////////////////////////
             Container(
-              padding: EdgeInsets.only(top: 15, bottom: 15),
+              padding: EdgeInsets.only(top: 25, bottom: 15),
               child: Text(
                 "Productivity",
                 style: TextStyle(fontSize: 19, fontWeight: FontWeight.bold),
@@ -124,7 +124,7 @@ class _analyticsState extends State<analytics> {
                       width: 120,
                       height: 65,
                       decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 62, 123, 173),
+                          color: Color.fromARGB(255, 48, 92, 127),
                           borderRadius: BorderRadius.circular(15)),
                       child: Text(
                         "Weekly",

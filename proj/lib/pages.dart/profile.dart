@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:proj/pages.dart/analytics.dart';
 import 'package:proj/pages.dart/appointment.dart';
 import 'package:proj/pages.dart/doctors.dart';
@@ -111,7 +112,8 @@ class _profileState extends State<profile> {
                         child: Expanded(
                             child: ListTile(
                       leading: Icon(
-                        Icons.ac_unit_outlined,
+                        FontAwesomeIcons.trophy,
+                        size: 22,
                         color: Color.fromARGB(255, 62, 123, 173),
                       ),
                       title: Text(
@@ -177,7 +179,8 @@ class _profileState extends State<profile> {
                         child: Expanded(
                             child: ListTile(
                       leading: Icon(
-                        Icons.app_registration_outlined,
+                        FontAwesomeIcons.calendar,
+                        size: 22,
                         color: Color.fromARGB(255, 62, 123, 173),
                       ),
                       title: Text(
@@ -243,7 +246,8 @@ class _profileState extends State<profile> {
                         child: Expanded(
                             child: ListTile(
                       leading: Icon(
-                        Icons.analytics_outlined,
+                        FontAwesomeIcons.lineChart,
+                        size: 22,
                         color: Color.fromARGB(255, 62, 123, 173),
                       ),
                       title: Text(
@@ -307,7 +311,8 @@ class _profileState extends State<profile> {
                         child: Expanded(
                             child: ListTile(
                       leading: Icon(
-                        Icons.logout_sharp,
+                        FontAwesomeIcons.signOut,
+                        size: 21,
                         color: Color.fromARGB(255, 62, 123, 173),
                       ),
                       title: Text(

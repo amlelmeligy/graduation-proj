@@ -16,7 +16,7 @@ class _meetingState extends State<meeting> {
         decoration: BoxDecoration(
           color: Color.fromARGB(255, 182, 216, 245),
           image: DecorationImage(
-            image: AssetImage("images/1.png"),
+            image: AssetImage("images/1.jpg"),
             fit: BoxFit.cover,
           ),
         ),
@@ -32,7 +32,7 @@ class _meetingState extends State<meeting> {
                       Text(
                         "Dr.Ahmed",
                         style: TextStyle(
-                            fontSize: 22,
+                            fontSize: 25,
                             color: Colors.black,
                             fontWeight: FontWeight.bold),
                       ),
@@ -41,7 +41,7 @@ class _meetingState extends State<meeting> {
                       ),
                       Text(
                         "10:00",
-                        style: TextStyle(fontSize: 18, color: Colors.black),
+                        style: TextStyle(fontSize: 20, color: Colors.black),
                       )
                     ],
                   ),
@@ -50,7 +50,7 @@ class _meetingState extends State<meeting> {
                     width: 100,
                     height: 100,
                     child:
-                        Expanded(child: Image.asset("images/image1 (3).jpg")))
+                        Expanded(child: Image.asset("images/image1 (2).jpg")))
               ],
             ),
           ),
@@ -59,36 +59,39 @@ class _meetingState extends State<meeting> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  width: 50,
-                  height: 50,
+                  width: 55,
+                  height: 55,
                   decoration: BoxDecoration(
                       color: const Color.fromARGB(255, 255, 255, 255),
                       borderRadius: BorderRadius.circular(50)),
                   child: Icon(
                     Icons.mic,
-                    size: 30,
+                    size: 32,
                   ),
                 ),
                 Container(width: 30),
                 Container(
-                  width: 50,
-                  height: 50,
+                  width: 55,
+                  height: 55,
                   decoration: BoxDecoration(
                       color: Color.fromARGB(33, 253, 253, 253),
                       borderRadius: BorderRadius.circular(50)),
                   child: Icon(
                     Icons.videocam,
-                    size: 30,
+                    size: 32,
                   ),
                 ),
                 Container(width: 30),
                 Container(
-                  width: 50,
-                  height: 50,
+                  width: 55,
+                  height: 55,
                   decoration: BoxDecoration(
                       color: Colors.red,
                       borderRadius: BorderRadius.circular(50)),
-                  child: Icon(Icons.call),
+                  child: Icon(
+                    Icons.call,
+                    size: 32,
+                  ),
                 ),
               ],
             ),
