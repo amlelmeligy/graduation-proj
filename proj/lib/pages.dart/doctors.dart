@@ -13,9 +13,10 @@ class _doctorsState extends State<doctors> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        color: Color.fromARGB(255, 250, 244, 244),
         child: ListView(children: [
           Container(
-            padding: EdgeInsets.only(top: 20, bottom: 20),
+            padding: EdgeInsets.only(top: 15, bottom: 15),
             child: Center(
               child: Text(
                 "All Doctors",
@@ -41,42 +42,55 @@ class _doctorsState extends State<doctors> {
             ),
           ),
 ////
-          aboutDoctors(
-              img: "1.png",
-              name: "Dr.Ahmed",
-              title:
-                  "ADHD doctors typically have a background in psychiatry, psychology, or pediatrics, and they have received additional training in ADHD diagnosis and treatment."),
-
-          aboutDoctors(
-              img: "2.png",
-              name: "Dr.Rania",
-              title:
-                  "ADHD doctors typically have a background in psychiatry, psychology, or pediatrics, and they have received additional training in ADHD diagnosis and treatment."),
-          aboutDoctors(
-              img: "3.png",
-              name: "Dr.Karim",
-              title:
-                  "ADHD doctors typically have a background in psychiatry, psychology, or pediatrics, and they have received additional training in ADHD diagnosis and treatment."),
-          aboutDoctors(
-              img: "1.png",
-              name: "Dr.Khaled",
-              title:
-                  "ADHD doctors typically have a background in psychiatry, psychology, or pediatrics, and they have received additional training in ADHD diagnosis and treatment."),
-          aboutDoctors(
-              img: "3.png",
-              name: "Dr.Yassin",
-              title:
-                  "ADHD doctors typically have a background in psychiatry, psychology, or pediatrics, and they have received additional training in ADHD diagnosis and treatment."),
-          aboutDoctors(
-              img: "1.png",
-              name: "Dr.Hassan",
-              title:
-                  "ADHD doctors typically have a background in psychiatry, psychology, or pediatrics, and they have received additional training in ADHD diagnosis and treatment."),
-          aboutDoctors(
-              img: "3.png",
-              name: "Dr.Mohamed",
-              title:
-                  "ADHD doctors typically have a background in psychiatry, psychology, or pediatrics, and they have received additional training in ADHD diagnosis and treatment.")
+          Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(15),
+            ),
+            child: aboutDoctors(
+                img: "1.png",
+                name: "Dr. Ahmed Yassin",
+                title: "Psychiatric and neurological consultant"),
+          ),
+          Container(
+            decoration: BoxDecoration(
+              // color: Colors.white,
+              borderRadius: BorderRadius.circular(15),
+            ),
+            child: aboutDoctors(
+                img: "11.png",
+                name: "Dr. Rania Samir",
+                title: "Psychiatric and neurological consultant"),
+          ),
+          Container(
+            child: aboutDoctors(
+                img: "3.png",
+                name: "Dr. Karim Mohamed",
+                title: "Psychiatric and neurological consultant"),
+          ),
+          Container(
+            child: aboutDoctors(
+                img: "1.png",
+                name: "Dr. Khaled Ramy",
+                title: "Psychiatric and neurological consultant"),
+          ),
+          Container(
+            child: aboutDoctors(
+                img: "3.png",
+                name: "Dr. Ahmed Murad",
+                title: "Psychiatric and neurological consultant"),
+          ),
+          Container(
+            child: aboutDoctors(
+                img: "1.png",
+                name: "Dr. Aliaa Hussain",
+                title: "Psychiatric and neurological consultant"),
+          ),
+          Container(
+            child: aboutDoctors(
+                img: "3.png",
+                name: "Dr.Mohamed",
+                title: "Psychiatric and neurological consultant"),
+          )
         ]),
       ),
     );

@@ -32,11 +32,14 @@ dependencies:
     sdk: flutter
   table_calendar: ^3.0.9
   carousel_slider: ^4.2.1
+  
+
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   font_awesome_flutter: ^10.7.0
+  http: ^1.1.0
 
 dev_dependencies:
   flutter_test:
@@ -70,7 +73,6 @@ flutter:
     - images/image1 (2).jpg
     - images/image1 (3).jpg
     - images/image1 (4).jpg
-    - images/image1 (5).jpg
     - images/image1 (6).jpg
     - images/image1 (7).jpg
     - images/image1 (8).jpg
@@ -84,10 +86,12 @@ flutter:
     - images/7.png
     - images/8.png
     - images/1.png
-    - images/2.png
     - images/3.png
     - images/4.png
     - images/5.png
+    - images/9.png
+    - images/10.png
+    - images/11.png
     - images/Frame 1.png
     - images/Group 3.png
     - images/code.png

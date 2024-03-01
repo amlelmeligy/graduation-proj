@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:proj/home/Home.dart';
 import 'package:proj/navigation_bar.dart';
+import 'package:http/http.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: Navigation(),
     );
   }
