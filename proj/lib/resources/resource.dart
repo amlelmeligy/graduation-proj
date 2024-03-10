@@ -1,9 +1,6 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:proj/resources/model.dart';
-import 'package:proj/resources/title.dart';
 
 class resource extends StatefulWidget {
   const resource({super.key});
@@ -180,4 +177,12 @@ class _resourceState extends State<resource> {
       index = value;
     });
   }
+}
+
+////////////////////////////////////////////////////////////////
+class Data {
+  String image;
+  String title;
+
+  Data({required this.image, required this.title});
 }
