@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:proj/edit_task/edit_task.dart';
 import 'package:proj/pages.dart/appointment.dart';
+import 'package:proj/pages.dart/doctors.dart';
 
-class aboutDoctors extends StatelessWidget {
+class aboutDoctors extends StatefulWidget {
   final String img;
   final String name;
   final String title;
@@ -16,6 +18,11 @@ class aboutDoctors extends StatelessWidget {
   });
 
   @override
+  State<aboutDoctors> createState() => _aboutDoctorsState();
+}
+
+class _aboutDoctorsState extends State<aboutDoctors> {
+  @override
   Widget build(BuildContext context) {
     return Container(
       child: Row(
@@ -23,7 +30,9 @@ class aboutDoctors extends StatelessWidget {
           Column(
             children: [
               Container(
-                  width: 120, height: 150, child: Image.asset("images/$img"))
+                  width: 120,
+                  height: 150,
+                  child: Image.asset("images/${widget.img}"))
             ],
           ),
           Column(
@@ -32,7 +41,7 @@ class aboutDoctors extends StatelessWidget {
                 padding: EdgeInsets.only(bottom: 5),
                 width: 200,
                 child: Text(
-                  "$name",
+                  "${widget.name}",
                   style: TextStyle(fontSize: 20),
                   textAlign: TextAlign.start,
                 ),
@@ -40,7 +49,7 @@ class aboutDoctors extends StatelessWidget {
               Container(
                 width: 200,
                 child: Text(
-                  "$title",
+                  "${widget.title}",
                   style: TextStyle(fontSize: 14),
                 ),
               ),
@@ -65,10 +74,20 @@ class aboutDoctors extends StatelessWidget {
               children: [
                 Container(
                   padding: EdgeInsets.only(left: 15),
-                  child: Icon(
-                    FontAwesomeIcons.solidHeart,
-                    color: Color.fromARGB(255, 61, 125, 177),
-                    size: 20,
+                  child: IconButton(
+                    onPressed: () {
+                      setState(() {
+                        click = !click;
+                      });
+                    },
+                    icon: Icon(
+                      click
+                          ? FontAwesomeIcons.solidHeart
+                          : FontAwesomeIcons.heart,
+                    ),
+                    color: click
+                        ? Color.fromARGB(255, 61, 125, 177)
+                        : Color.fromARGB(255, 75, 73, 73),
                   ),
                 ),
                 Container(
@@ -84,7 +103,7 @@ class aboutDoctors extends StatelessWidget {
                     child: Text(
                       "Book Now",
                       style: TextStyle(
-                        fontSize: 10,
+                        fontSize: 11.5,
                         color: Color.fromARGB(255, 61, 125, 177),
                       ),
                     ),

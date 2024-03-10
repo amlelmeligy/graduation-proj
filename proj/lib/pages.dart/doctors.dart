@@ -8,6 +8,8 @@ class doctors extends StatefulWidget {
   State<doctors> createState() => _doctorsState();
 }
 
+bool click = true;
+
 class _doctorsState extends State<doctors> {
   @override
   Widget build(BuildContext context) {
@@ -16,11 +18,11 @@ class _doctorsState extends State<doctors> {
         color: Color.fromARGB(255, 250, 244, 244),
         child: ListView(children: [
           Container(
-            padding: EdgeInsets.only(top: 15, bottom: 15),
+            padding: EdgeInsets.only(top: 17, bottom: 15),
             child: Center(
               child: Text(
                 "All Doctors",
-                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
             ),
           ),
@@ -53,7 +55,6 @@ class _doctorsState extends State<doctors> {
           ),
           Container(
             decoration: BoxDecoration(
-              // color: Colors.white,
               borderRadius: BorderRadius.circular(15),
             ),
             child: aboutDoctors(

@@ -25,12 +25,12 @@ class _profileState extends State<profile> {
             Center(
                 child: Text(
               "User Profile",
-              style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
             )),
             Container(
               padding: EdgeInsets.only(top: 10),
-              width: 80,
-              height: 80,
+              width: 90,
+              height: 90,
               child: Center(
                   child: ClipRRect(
                 borderRadius: BorderRadius.circular(20),
@@ -42,11 +42,20 @@ class _profileState extends State<profile> {
               child: Center(
                   child: Text(
                 "Salma Khaled",
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
               )),
             ),
             Center(
-              child: TextButton(onPressed: () {}, child: Text("Edit Profile")),
+              child: TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    "Edit Profile",
+                    style: TextStyle(
+                      color: Colors.blue[700],
+                      fontSize: 14.5,
+                      decoration: TextDecoration.underline,
+                    ),
+                  )),
             ),
             ////////////////////////////////////////////////////////////////////////
             InkWell(
@@ -100,11 +109,7 @@ class _profileState extends State<profile> {
                 );
               },
               child: Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    border: Border.all(
-                        color: const Color.fromARGB(255, 62, 123, 173))),
-                margin: EdgeInsets.all(10),
+                margin: EdgeInsets.only(top: 15, left: 5, right: 5),
                 padding: EdgeInsets.all(5),
                 child: Row(
                   children: [
@@ -118,7 +123,8 @@ class _profileState extends State<profile> {
                       ),
                       title: Text(
                         "Rewards",
-                        style: TextStyle(fontSize: 19),
+                        style: TextStyle(
+                            fontSize: 19, fontWeight: FontWeight.bold),
                       ),
                       trailing: Icon(Icons.chevron_right_outlined),
                     ))),
@@ -134,11 +140,7 @@ class _profileState extends State<profile> {
                 );
               },
               child: Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    border: Border.all(
-                        color: const Color.fromARGB(255, 62, 123, 173))),
-                margin: EdgeInsets.all(10),
+                margin: EdgeInsets.only(top: 5, left: 5, right: 5),
                 padding: EdgeInsets.all(5),
                 child: Row(
                   children: [
@@ -151,7 +153,8 @@ class _profileState extends State<profile> {
                       ),
                       title: Text(
                         "Review about Doctors",
-                        style: TextStyle(fontSize: 19),
+                        style: TextStyle(
+                            fontSize: 19, fontWeight: FontWeight.bold),
                       ),
                       trailing: Icon(Icons.chevron_right_outlined),
                     ))),
@@ -167,11 +170,7 @@ class _profileState extends State<profile> {
                 );
               },
               child: Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    border: Border.all(
-                        color: const Color.fromARGB(255, 62, 123, 173))),
-                margin: EdgeInsets.all(10),
+                margin: EdgeInsets.only(top: 5, left: 5, right: 5),
                 padding: EdgeInsets.all(5),
                 child: Row(
                   children: [
@@ -185,7 +184,8 @@ class _profileState extends State<profile> {
                       ),
                       title: Text(
                         "Book an appointment",
-                        style: TextStyle(fontSize: 19),
+                        style: TextStyle(
+                            fontSize: 19, fontWeight: FontWeight.bold),
                       ),
                       trailing: Icon(Icons.chevron_right_outlined),
                     ))),
@@ -201,11 +201,7 @@ class _profileState extends State<profile> {
                 );
               },
               child: Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    border: Border.all(
-                        color: const Color.fromARGB(255, 62, 123, 173))),
-                margin: EdgeInsets.all(10),
+                margin: EdgeInsets.only(top: 5, left: 5, right: 5),
                 padding: EdgeInsets.all(5),
                 child: Row(
                   children: [
@@ -218,7 +214,8 @@ class _profileState extends State<profile> {
                       ),
                       title: Text(
                         "Join Meeting with doctor",
-                        style: TextStyle(fontSize: 19),
+                        style: TextStyle(
+                            fontSize: 19, fontWeight: FontWeight.bold),
                       ),
                       trailing: Icon(Icons.chevron_right_outlined),
                     ))),
@@ -234,11 +231,7 @@ class _profileState extends State<profile> {
                 );
               },
               child: Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    border: Border.all(
-                        color: const Color.fromARGB(255, 62, 123, 173))),
-                margin: EdgeInsets.all(10),
+                margin: EdgeInsets.only(top: 5, left: 5, right: 5),
                 padding: EdgeInsets.all(5),
                 child: Row(
                   children: [
@@ -252,7 +245,8 @@ class _profileState extends State<profile> {
                       ),
                       title: Text(
                         "My Analytics",
-                        style: TextStyle(fontSize: 19),
+                        style: TextStyle(
+                            fontSize: 19, fontWeight: FontWeight.bold),
                       ),
                       trailing: Icon(Icons.chevron_right_outlined),
                     ))),
@@ -268,11 +262,7 @@ class _profileState extends State<profile> {
                 );
               },
               child: Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    border: Border.all(
-                        color: const Color.fromARGB(255, 62, 123, 173))),
-                margin: EdgeInsets.all(10),
+                margin: EdgeInsets.only(top: 5, left: 5, right: 5),
                 padding: EdgeInsets.all(5),
                 child: Row(
                   children: [
@@ -285,7 +275,8 @@ class _profileState extends State<profile> {
                       ),
                       title: Text(
                         "Tips for dealing with ADHD",
-                        style: TextStyle(fontSize: 19),
+                        style: TextStyle(
+                            fontSize: 19, fontWeight: FontWeight.bold),
                       ),
                       trailing: Icon(Icons.chevron_right_outlined),
                     ))),
@@ -295,15 +286,9 @@ class _profileState extends State<profile> {
             ),
             ////////////////////////////////////////////////////////////////////////////
             InkWell(
-              onTap: () {
-                print("object");
-              },
+              onTap: () {},
               child: Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    border: Border.all(
-                        color: const Color.fromARGB(255, 62, 123, 173))),
-                margin: EdgeInsets.all(10),
+                margin: EdgeInsets.only(top: 5, left: 5, right: 5),
                 padding: EdgeInsets.all(5),
                 child: Row(
                   children: [
@@ -317,14 +302,15 @@ class _profileState extends State<profile> {
                       ),
                       title: Text(
                         "Log Out",
-                        style: TextStyle(fontSize: 19),
+                        style: TextStyle(
+                            fontSize: 19, fontWeight: FontWeight.bold),
                       ),
                       trailing: Icon(Icons.chevron_right_outlined),
                     ))),
                   ],
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),
