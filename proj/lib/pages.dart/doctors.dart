@@ -15,7 +15,7 @@ class _doctorsState extends State<doctors> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Color.fromARGB(255, 250, 244, 244),
+        color: Color.fromARGB(255, 234, 232, 232),
         child: ListView(children: [
           Container(
             padding: EdgeInsets.only(top: 17, bottom: 15),

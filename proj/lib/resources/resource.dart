@@ -28,6 +28,7 @@ class _resourceState extends State<resource> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
           body: Container(
         color: Color.fromARGB(255, 238, 243, 246),
