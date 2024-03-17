@@ -14,9 +14,8 @@ class _meetingState extends State<meeting> {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
-          color: Color.fromARGB(255, 182, 216, 245),
           image: DecorationImage(
-            image: AssetImage("images/1.jpg"),
+            image: AssetImage("images/1.jpeg"),
             fit: BoxFit.cover,
           ),
         ),

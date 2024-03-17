@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 
-class bot extends StatefulWidget {
-  const bot({super.key});
+class ChatBot extends StatefulWidget {
+  const ChatBot({super.key});
 
   @override
-  State<bot> createState() => _botState();
+  State<ChatBot> createState() => _ChatBotState();
 }
 
-class _botState extends State<bot> {
+class _ChatBotState extends State<ChatBot> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Container(),
+    );
   }
 }

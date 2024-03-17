@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:proj/navigation_bar.dart';
-import 'package:http/http.dart';
+// import 'package:http/http.dart';
 
 void main() {
   runApp(const MyApp());

@@ -145,7 +145,8 @@ class _paymentState extends State<payment> {
             ///////////////////////////////////////////////////////////////////////////
             Container(
               padding: EdgeInsets.all(20),
-              child: paymentDet(tit: "Card Number", sub: "1234 5678 1234 5678"),
+              child:
+                  paymentDet(tit: "Card Number", sub: "1234  5678  1234  5678"),
             ),
 
             Container(
@@ -186,13 +187,31 @@ class _paymentState extends State<payment> {
               ),
             ),
             Container(
-              height: 110,
-              padding: EdgeInsets.only(top: 60, right: 40, left: 40),
+              padding: EdgeInsets.only(right: 20, left: 20, top: 20),
+              child: Row(
+                children: [
+                  Expanded(
+                      child: paymentDet(
+                    tit: "Duration",
+                    sub: "60 Minutes",
+                  )),
+                  Container(width: 40),
+                  Expanded(
+                      child: paymentDet(
+                    tit: "Amount",
+                    sub: "150 LE",
+                  )),
+                ],
+              ),
+            ),
+            Container(
+              height: 75,
+              padding: EdgeInsets.only(top: 30, right: 40, left: 40),
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Color.fromARGB(255, 61, 125, 177),
+                    backgroundColor: Color.fromARGB(255, 32, 93, 144),
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(25))),
+                        borderRadius: BorderRadius.circular(15))),
                 onPressed: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => thankYou()),
