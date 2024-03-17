@@ -15,7 +15,7 @@ class Navigation extends StatefulWidget {
 
 class _NavigationState extends State<Navigation> {
   int index = 0;
-  final screens = [Home(), resource(), addTask(), ChatBot(), profile()];
+  final screens = [Home(), resource(), addTask(), ChatBot1(), profile()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
