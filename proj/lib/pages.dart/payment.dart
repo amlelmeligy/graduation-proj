@@ -219,11 +219,14 @@ class _paymentState extends State<payment> {
                 },
                 child: Text(
                   "Pay",
-                  style: TextStyle(fontSize: 25),
+                  style: TextStyle(fontSize: 25, color: Colors.white),
                   textAlign: TextAlign.center,
                 ),
               ),
             ),
+            SizedBox(
+              height: 50,
+            )
           ],
         ),
       ),

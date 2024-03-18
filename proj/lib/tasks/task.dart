@@ -24,7 +24,7 @@ class _taskState extends State<task> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                padding: EdgeInsets.only(top: 20, bottom: 30),
+                padding: EdgeInsets.only(top: 5, bottom: 15),
                 child: Text(
                   "Your Tasks",
                   style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),

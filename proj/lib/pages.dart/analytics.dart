@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class analytics extends StatefulWidget {
   const analytics({super.key});
@@ -16,7 +17,7 @@ class _analyticsState extends State<analytics> {
         child: ListView(
           children: [
             Container(
-              padding: EdgeInsets.only(top: 15, bottom: 15),
+              // padding: EdgeInsets.only(top: 15, bottom: 15),
               child: Text(
                 "User Analytics",
                 style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
@@ -46,12 +47,12 @@ class _analyticsState extends State<analytics> {
                         Text(
                           "Total",
                           style: TextStyle(
-                              fontSize: 18, fontWeight: FontWeight.bold),
+                              fontSize: 16, fontWeight: FontWeight.bold),
                         ),
                         Text(
                           "12",
                           style: TextStyle(
-                              fontSize: 18, fontWeight: FontWeight.bold),
+                              fontSize: 16, fontWeight: FontWeight.bold),
                         )
                       ],
                     ),
@@ -70,12 +71,12 @@ class _analyticsState extends State<analytics> {
                         Text(
                           "Completed",
                           style: TextStyle(
-                              fontSize: 18, fontWeight: FontWeight.bold),
+                              fontSize: 16, fontWeight: FontWeight.bold),
                         ),
                         Text(
                           "8",
                           style: TextStyle(
-                              fontSize: 18, fontWeight: FontWeight.bold),
+                              fontSize: 16, fontWeight: FontWeight.bold),
                         )
                       ],
                     ),
@@ -94,12 +95,12 @@ class _analyticsState extends State<analytics> {
                         Text(
                           "Pending",
                           style: TextStyle(
-                              fontSize: 18, fontWeight: FontWeight.bold),
+                              fontSize: 16, fontWeight: FontWeight.bold),
                         ),
                         Text(
                           "4",
                           style: TextStyle(
-                              fontSize: 18, fontWeight: FontWeight.bold),
+                              fontSize: 16, fontWeight: FontWeight.bold),
                         )
                       ],
                     ),
@@ -175,7 +176,7 @@ class _analyticsState extends State<analytics> {
             ),
             //////////////////////////////////////////////////////////////////////////////
             Container(
-              padding: EdgeInsets.only(top: 15, bottom: 15),
+              padding: EdgeInsets.only(top: 10, bottom: 10),
               child: Text(
                 "Tasks",
                 style: TextStyle(fontSize: 19, fontWeight: FontWeight.bold),
@@ -193,7 +194,7 @@ class _analyticsState extends State<analytics> {
                 children: [
                   Image.asset("images/Group 654.png"),
                   Container(
-                    padding: EdgeInsets.only(left: 80, top: 20),
+                    padding: EdgeInsets.only(left: 60, top: 25),
                     child: Column(
                       children: [
                         Container(
@@ -208,7 +209,14 @@ class _analyticsState extends State<analytics> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text("This Week"),
-                              Icon(Icons.safety_check)
+                              SizedBox(
+                                width: 5,
+                              ),
+                              Icon(
+                                FontAwesomeIcons.shield,
+                                size: 15,
+                                color: Color.fromARGB(255, 62, 123, 173),
+                              )
                             ],
                           ),
                         ),

@@ -79,7 +79,7 @@ class _resourceState extends State<resource> {
                                 child: Container(
                                   padding: EdgeInsets.all(10),
                                   width: 450,
-                                  height: 300,
+                                  height: 320,
                                   child: Center(
                                     child: Column(
                                       mainAxisAlignment:

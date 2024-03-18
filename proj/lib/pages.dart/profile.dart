@@ -38,7 +38,6 @@ class _profileState extends State<profile> {
               )),
             ),
             Container(
-              padding: EdgeInsets.only(top: 10),
               child: Center(
                   child: Text(
                 "Salma Khaled",

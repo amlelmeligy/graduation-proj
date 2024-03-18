@@ -21,6 +21,7 @@ class _NavigationState extends State<Navigation> {
     return Scaffold(
       body: screens[index],
       bottomNavigationBar: NavigationBar(
+        backgroundColor: Colors.white,
         selectedIndex: index,
         onDestinationSelected: (index) => setState(() => this.index = index),
         height: 70,

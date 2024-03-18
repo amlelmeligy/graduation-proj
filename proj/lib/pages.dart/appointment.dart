@@ -348,11 +348,14 @@ class _appointmentState extends State<appointment> {
                 },
                 child: Text(
                   "Set Appointment",
-                  style: TextStyle(fontSize: 22),
+                  style: TextStyle(fontSize: 22, color: Colors.white),
                   textAlign: TextAlign.center,
                 ),
               ),
             ),
+            SizedBox(
+              height: 40,
+            )
           ],
         ),
       ),

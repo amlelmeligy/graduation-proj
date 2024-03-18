@@ -29,7 +29,9 @@ class CustomListtile extends StatelessWidget {
                 "$sub",
                 style: TextStyle(fontSize: 12),
               ),
-              trailing: Text("$date"),
+              trailing: Text(
+                "$date",
+              ),
             )),
             Container(
               child: Icon(Icons.arrow_right),

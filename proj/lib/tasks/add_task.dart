@@ -145,7 +145,7 @@ class _addTaskState extends State<addTask> {
                             child: Text(
                               "Medium",
                               style: TextStyle(
-                                  fontSize: 16,
+                                  fontSize: 15,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.black),
                             )),
@@ -195,7 +195,7 @@ class _addTaskState extends State<addTask> {
             ),
 
             Container(
-              padding: EdgeInsets.only(top: 20, bottom: 50),
+              padding: EdgeInsets.only(top: 15, bottom: 15),
               child: SwitchListTile(
                 title: Text(
                   "Reminder",
@@ -213,6 +213,7 @@ class _addTaskState extends State<addTask> {
             ),
             Center(
               child: Container(
+                margin: EdgeInsets.only(bottom: 50),
                 width: 320,
                 height: 50,
                 child: ElevatedButton(
@@ -257,7 +258,7 @@ class _addTaskState extends State<addTask> {
                                     decoration: BoxDecoration(
                                         borderRadius:
                                             BorderRadius.circular(12)),
-                                    padding: EdgeInsets.only(bottom: 30),
+                                    padding: EdgeInsets.only(top: 30),
                                     child: ElevatedButton(
                                       style: ElevatedButton.styleFrom(
                                         shape: RoundedRectangleBorder(

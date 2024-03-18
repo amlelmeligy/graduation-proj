@@ -88,7 +88,7 @@ class thankYou extends StatelessWidget {
               ),
               Container(
                 padding:
-                    EdgeInsets.only(right: 25, left: 25, bottom: 50, top: 30),
+                    EdgeInsets.only(right: 25, left: 25, bottom: 30, top: 30),
                 child: Divider(
                   endIndent: 0,
                   height: 2,
@@ -96,7 +96,7 @@ class thankYou extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(right: 35, left: 38, bottom: 30),
+                padding: EdgeInsets.only(right: 35, left: 38, bottom: 10),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -119,7 +119,7 @@ class thankYou extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20)),
                 padding: EdgeInsets.all(20),
                 width: 310,
-                height: 85,
+                height: 95,
                 child: Row(
                   children: [
                     Container(
