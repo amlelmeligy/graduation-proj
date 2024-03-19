@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:proj/pages.dart/about_doctor.dart';
+import 'package:proj/profile.dart/about_doctor.dart';
 
 class doctors extends StatefulWidget {
   const doctors({super.key});

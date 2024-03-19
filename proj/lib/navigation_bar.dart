@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:proj/home/Home.dart';
-import 'package:proj/pages.dart/bot.dart';
-import 'package:proj/pages.dart/profile.dart';
+import 'package:proj/profile.dart/bot.dart';
+import 'package:proj/profile.dart/profile.dart';
 import 'package:proj/resources/resource.dart';
 import 'package:proj/tasks/add_task.dart';
 

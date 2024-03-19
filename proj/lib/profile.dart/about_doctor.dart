@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:proj/edit_task/edit_task.dart';
-import 'package:proj/pages.dart/appointment.dart';
-import 'package:proj/pages.dart/doctors.dart';
+import 'package:proj/profile.dart/appointment.dart';
+import 'package:proj/profile.dart/doctors.dart';
 
 class aboutDoctors extends StatefulWidget {
   final String img;

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:proj/pages.dart/analytics.dart';
-import 'package:proj/pages.dart/appointment.dart';
-import 'package:proj/pages.dart/doctors.dart';
-import 'package:proj/pages.dart/meeting.dart';
-import 'package:proj/pages.dart/tips.dart';
+import 'package:proj/profile.dart/analytics.dart';
+import 'package:proj/profile.dart/appointment.dart';
+import 'package:proj/profile.dart/doctors.dart';
+import 'package:proj/profile.dart/meeting.dart';
+import 'package:proj/profile.dart/tips.dart';
 
 class profile extends StatefulWidget {
   const profile({super.key});
